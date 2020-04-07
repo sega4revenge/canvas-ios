@@ -66,15 +66,15 @@ class UploadManagerTests: CoreTestCase {
     func testUploadURLSharedContainer() throws {
         UUID.mock("shared")
         let expected = URL
-            .sharedContainer("group.com.instructure.icanvas")?
+            .sharedContainer("group.vn.flexidata.lms.student")?
             .appendingPathComponent("uploads/shared/")
             .appendingPathComponent(url.lastPathComponent)
         let config = URLSessionConfiguration.background(withIdentifier: "doesnt matter")
-        config.sharedContainerIdentifier = "group.com.instructure.icanvas"
+        config.sharedContainerIdentifier = "group.vn.flexidata.lms.student"
         URLSessionAPI.delegateURLSession = { (configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue: OperationQueue?) -> URLSession in
             return URLSession(configuration: config, delegate: delegate, delegateQueue: delegateQueue)
         }
-        let manager = UploadManager(identifier: "test", sharedContainerIdentifier: "group.com.instructure.icanvas")
+        let manager = UploadManager(identifier: "test", sharedContainerIdentifier: "group.vn.flexidata.lms.student")
         XCTAssertEqual(try manager.uploadURL(url), expected)
     }
 

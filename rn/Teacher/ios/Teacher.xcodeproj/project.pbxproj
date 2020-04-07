@@ -180,7 +180,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		13B07F961A680F5B00A75B9A /* Teacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Giáo Viên.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giáo Viên.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Teacher/Assets.xcassets; sourceTree = "<group>"; };
 		1ED095C0D4A9D20D53D1F6BD /* Pods-defaults-common_ui_tests-TeacherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-common_ui_tests-TeacherUITests.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-defaults-common_ui_tests-TeacherUITests/Pods-defaults-common_ui_tests-TeacherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2C3DE5091F21494D00AE1D59 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Teacher/Info.plist; sourceTree = "<group>"; };
@@ -576,7 +576,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Teacher.app */,
+				13B07F961A680F5B00A75B9A /* Giáo Viên.app */,
 				B15CA25D221DDB820014FB02 /* TeacherTests.xctest */,
 				E8315D3622FC9E60003CD27C /* TeacherUITests.xctest */,
 				E841D8B923D6472F00685A63 /* TeacherE2ETests.xctest */,
@@ -695,7 +695,7 @@
 			);
 			name = Teacher;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* Teacher.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Giáo Viên.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B15CA25C221DDB820014FB02 /* TeacherTests */ = {
@@ -1338,7 +1338,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"DEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.ios.teacher;
-				PRODUCT_NAME = Teacher;
+				PRODUCT_NAME = "Giáo Viên";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Teacher/bridging-header.h";
@@ -1401,7 +1401,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.ios.teacher;
-				PRODUCT_NAME = Teacher;
+				PRODUCT_NAME = "Giáo Viên";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Teacher/bridging-header.h";
 				SWIFT_VERSION = 5.0;

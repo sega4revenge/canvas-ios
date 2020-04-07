@@ -737,7 +737,7 @@
 		5E41048A1C99E08B0021567C /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		5E41048C1C9B1F3E0021567C /* CalendarEvent+Submissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarEvent+Submissions.swift"; sourceTree = "<group>"; };
 		5E4E20501C927EB100E7D709 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
-		5E6441871C3EE2E0003D7397 /* Parent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E6441871C3EE2E0003D7397 /* Phụ Huynh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phụ Huynh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6441911C3EE2E0003D7397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E6441941C3EE2E0003D7397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E6441961C3EE2E0003D7397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1232,7 +1232,7 @@
 		5E6441881C3EE2E0003D7397 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E6441871C3EE2E0003D7397 /* Parent.app */,
+				5E6441871C3EE2E0003D7397 /* Phụ Huynh.app */,
 				3B36A2DF2322C26A00599A1E /* ParentUnitTests.xctest */,
 				E8E1BE4A23C6891F000E3A76 /* ParentUITests.xctest */,
 				E80763D523E08DA10085DAFB /* ParentE2ETests.xctest */,
@@ -1570,7 +1570,7 @@
 			);
 			name = Parent;
 			productName = Parent;
-			productReference = 5E6441871C3EE2E0003D7397 /* Parent.app */;
+			productReference = 5E6441871C3EE2E0003D7397 /* Phụ Huynh.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E80763C723E08DA10085DAFB /* ParentE2ETests */ = {
@@ -2874,8 +2874,8 @@
 				);
 				MARKETING_VERSION = 0.0.1;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.parentapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.parent;
+				PRODUCT_NAME = "Phụ Huynh";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2908,8 +2908,8 @@
 				);
 				MARKETING_VERSION = 0.0.1;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.parentapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.parent;
+				PRODUCT_NAME = "Phụ Huynh";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Parent/Parent-Bridging-Header.h";

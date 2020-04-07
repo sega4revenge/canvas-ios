@@ -366,7 +366,7 @@
 		3B90C1FF1FBE282F00A32303 /* GradesWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GradesWidget.entitlements; sourceTree = "<group>"; };
 		3B978D7A242EF80F00AFC4FF /* AssignmentListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListModelTests.swift; sourceTree = "<group>"; };
 		3B978D7C242EF9F700AFC4FF /* AssignmentListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListModel.swift; sourceTree = "<group>"; };
-		492704731CF4AF7100C631C6 /* Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Student.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		492704731CF4AF7100C631C6 /* Học Sinh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Học Sinh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		492704761CF4AF7100C631C6 /* CanvasAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasAppDelegate.swift; sourceTree = "<group>"; };
 		492704821CF4AF7100C631C6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492706A01CF4B93F00C631C6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -927,7 +927,7 @@
 		492704741CF4AF7100C631C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				492704731CF4AF7100C631C6 /* Student.app */,
+				492704731CF4AF7100C631C6 /* Học Sinh.app */,
 				3B6DCCA51FB502CD005EE8D2 /* GradesWidget.appex */,
 				B1BB7A8222BAC820006CA068 /* SubmitAssignment.appex */,
 				B1CA092E22C4237C008AA352 /* SubmitAssignmentTests.xctest */,
@@ -1870,7 +1870,7 @@
 			);
 			name = Student;
 			productName = Canvas;
-			productReference = 492704731CF4AF7100C631C6 /* Student.app */;
+			productReference = 492704731CF4AF7100C631C6 /* Học Sinh.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7DC5716F22F8B16200F2E9BB /* StudentUITests */ = {
@@ -2896,7 +2896,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas.GradesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student.GradesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2930,7 +2930,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas.GradesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student.GradesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -3069,8 +3069,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student;
+				PRODUCT_NAME = "Học Sinh";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -3100,8 +3100,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student;
+				PRODUCT_NAME = "Học Sinh";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -3243,7 +3243,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas.SubmitAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student.SubmitAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -3273,7 +3273,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas.SubmitAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student.SubmitAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

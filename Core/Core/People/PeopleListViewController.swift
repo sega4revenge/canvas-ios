@@ -172,7 +172,13 @@ extension PeopleListViewController: UISearchBarDelegate {
     }
 
     public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.searchTextField.resignFirstResponder()
+        if #available(iOSApplicationExtension 13.0, *) {
+            searchBar.searchTextField.resignFirstResponder()
+        } else {
+           let textField = searchBar.value(forKey: "searchField") as? UITextField
+            textField?.resignFirstResponder()
+        }
+        
         tableView.setContentOffset(CGPoint(x: 0, y: searchBar.frame.height), animated: true)
     }
 

@@ -64,7 +64,7 @@ class IPCServer {
 
 class IPCAppServer: IPCServer {
     static func portName(id: String) -> String {
-        "com.instructure.icanvas.ui-test-app-\(id)"
+        "vn.flexidata.lms.student.ui-test-app-\(id)"
     }
 
     override func handler(msgid: Int32, data: Data?) -> Data? {
@@ -114,7 +114,7 @@ protocol IPCDriverServerDelegate: class {
 
 class IPCDriverServer: IPCServer {
     static func portName(id: String) -> String {
-        "com.instructure.icanvas.ui-test-driver-\(id)"
+        "vn.flexidata.lms.student.ui-test-driver-\(id)"
     }
 
     override func handler(msgid: Int32, data: Data?) -> Data? {

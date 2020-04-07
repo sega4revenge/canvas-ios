@@ -22,7 +22,7 @@ import CoreData
 
 extension NSPersistentContainer {
     static var test: NSPersistentContainer {
-        let bundle = Bundle(identifier: "com.instructure.icanvas.Core")!
+        let bundle = Bundle(identifier: "vn.flexidata.lms.student.Core")!
         let modelURL = bundle.url(forResource: "Database", withExtension: "momd")!
         let model = NSManagedObjectModel(contentsOf: modelURL)!
         let container = NSPersistentContainer(name: "Database", managedObjectModel: model)

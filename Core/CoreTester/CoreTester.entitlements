@@ -9,7 +9,7 @@
 	<key>keychain-access-groups</key>
 	<array>
 		<string>$(AppIdentifierPrefix)com.instructure.shared-credentials</string>
-		<string>$(AppIdentifierPrefix)com.instructure.icanvas</string>
+		<string>$(AppIdentifierPrefix)vn.flexidata.lms.student</string>
 	</array>
 </dict>
 </plist>

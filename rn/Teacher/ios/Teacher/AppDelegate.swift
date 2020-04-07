@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     lazy var environment: AppEnvironment = {
         let env = AppEnvironment.shared
-        env.router = Teacher.router
+        env.router = router
         env.loginDelegate = self
         return env
     }()
@@ -189,19 +189,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     // We can't move this to Core as it would require setting up
     // Cocoapods for Core to pull in Firebase
     func configureRemoteConfig() {
-        let remoteConfig = RemoteConfig.remoteConfig()
-        remoteConfig.fetch(withExpirationDuration: 0) { _, _ in
-            remoteConfig.activate { _ in
-                let keys = remoteConfig.allKeys(from: .remote)
-                for key in keys {
-                    guard let feature = ExperimentalFeature(rawValue: key) else { continue }
-                    let value = remoteConfig.configValue(forKey: key).boolValue
-                    feature.isEnabled = value
-                    Firebase.Crashlytics.crashlytics().setCustomValue(value, forKey: feature.userDefaultsKey)
-                    Analytics.setUserProperty(value ? "YES" : "NO", forName: feature.rawValue)
-                }
-            }
-        }
+//        let remoteConfig = RemoteConfig.remoteConfig()
+//        remoteConfig.fetch(withExpirationDuration: 0) { _, _ in
+//            remoteConfig.activate { _ in
+//                let keys = remoteConfig.allKeys(from: .remote)
+//                for key in keys {
+//                    guard let feature = ExperimentalFeature(rawValue: key) else { continue }
+//                    let value = remoteConfig.configValue(forKey: key).boolValue
+//                    feature.isEnabled = value
+//                    Firebase.Crashlytics.crashlytics().setCustomValue(value, forKey: feature.userDefaultsKey)
+//                    Analytics.setUserProperty(value ? "YES" : "NO", forName: feature.rawValue)
+//                }
+//            }
+//        }
     }
 }
 

@@ -23,9 +23,9 @@ private class Placeholder {}
 public extension Bundle {
     @objc static let core = Bundle(for: Placeholder.self)
 
-    static let studentBundleID = "com.instructure.icanvas"
-    static let teacherBundleID = "com.instructure.ios.teacher"
-    static let parentBundleID = "com.instructure.parentapp"
+    static let studentBundleID = "vn.flexidata.lms.student"
+    static let teacherBundleID = "vn.flexidata.lms.teacher"
+    static let parentBundleID = "vn.flexidata.lms.parent"
 
     static let coreBundleID = "com.instructure.core"
 
