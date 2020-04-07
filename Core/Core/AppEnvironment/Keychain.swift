@@ -21,10 +21,10 @@ import Foundation
 public class Keychain {
     private let serviceName: String
     private let accessGroup: String?
-    public static var app = Keychain(serviceName: "com.instructure.shared-credentials", accessGroup: Bundle.main.appGroupID())
-    public static var shared = Keychain(serviceName: "com.instructure.shared-credentials", accessGroup: "group.instructure.shared")
+    public static var app = Keychain(serviceName: "vn.flexidata.lms.shared-credentials", accessGroup: Bundle.main.appGroupID())
+    public static var shared = Keychain(serviceName: "vn.flexidata.lms.shared-credentials", accessGroup: "group.instructure.shared")
 
-    init(serviceName: String = Bundle.main.bundleIdentifier ?? "com.instructure.general-purpose-keychain", accessGroup: String? = nil) {
+    init(serviceName: String = Bundle.main.bundleIdentifier ?? "vn.flexidata.lms.general-purpose-keychain", accessGroup: String? = nil) {
         self.serviceName = serviceName
         self.accessGroup = accessGroup
     }

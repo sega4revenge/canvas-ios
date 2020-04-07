@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Teacher.app"
+               BuildableName = "Gia&#x301;o Vie&#x302;n.app"
                BlueprintName = "Teacher"
                ReferencedContainer = "container:Teacher.xcodeproj">
             </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Teacher.app"
+            BuildableName = "Gia&#x301;o Vie&#x302;n.app"
             BlueprintName = "Teacher"
             ReferencedContainer = "container:Teacher.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Teacher.app"
+            BuildableName = "Gia&#x301;o Vie&#x302;n.app"
             BlueprintName = "Teacher"
             ReferencedContainer = "container:Teacher.xcodeproj">
          </BuildableReference>
@@ -127,7 +127,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Teacher.app"
+            BuildableName = "Gia&#x301;o Vie&#x302;n.app"
             BlueprintName = "Teacher"
             ReferencedContainer = "container:Teacher.xcodeproj">
          </BuildableReference>
@@ -151,7 +151,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Teacher.app"
+            BuildableName = "Gia&#x301;o Vie&#x302;n.app"
             BlueprintName = "Teacher"
             ReferencedContainer = "container:Teacher.xcodeproj">
          </BuildableReference>

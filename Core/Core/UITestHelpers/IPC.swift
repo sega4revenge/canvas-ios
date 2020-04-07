@@ -50,7 +50,7 @@ class IPCServer {
             let thread = Thread {
                 let loop = CFRunLoopGetCurrent()
                 let source = CFMessagePortCreateRunLoopSource(kCFAllocatorDefault, port, 0)
-                let mode = CFRunLoopMode("com.instructure.ipc-server" as CFString)
+                let mode = CFRunLoopMode("vn.flexidata.lms.ipc-server" as CFString)
                 CFRunLoopAddSource(loop, source, mode)
                 while true {
                     CFRunLoopRunInMode(mode, 1000, false)
@@ -163,7 +163,7 @@ class IPCClient {
 
         var responseData: Unmanaged<CFData>?
         let requestData = (try? JSONEncoder().encode(request))!
-        let mode = "com.instructure.ipc-client" as CFString
+        let mode = "vn.flexidata.lms.ipc-client" as CFString
         let status = CFMessagePortSendRequest(messagePort, 0, requestData as CFData, 1000, 1000, mode, &responseData)
         guard status == kCFMessagePortSuccess else {
             throw IPCError(message: "IPCClient.requestRemote: error sending IPC request")

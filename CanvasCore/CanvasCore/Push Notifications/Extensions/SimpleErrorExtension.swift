@@ -21,7 +21,7 @@ import Foundation
 extension NSError {
     @objc public class func simpleError(_ localizedDescription: String, code: Int) -> NSError {
         let userInfo = [NSLocalizedDescriptionKey: localizedDescription]
-        let error = NSError(domain: "com.instructure.canvas", code: code, userInfo: userInfo)
+        let error = NSError(domain: "vn.flexidata.lms.canvas", code: code, userInfo: userInfo)
         return error
     }
 }

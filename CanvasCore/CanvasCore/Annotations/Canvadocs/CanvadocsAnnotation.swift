@@ -276,7 +276,7 @@ struct CanvadocsAnnotation: Codable {
             try container.encode("square", forKey: .type)
             try encodeRect(rect: rect)
         case .unsupported:
-            throw NSError(domain: "com.instructure.annotations", code: -1, userInfo: [NSLocalizedFailureReasonErrorKey: "can't encode an unsupported type yo"])
+            throw NSError(domain: "vn.flexidata.lms.annotations", code: -1, userInfo: [NSLocalizedFailureReasonErrorKey: "can't encode an unsupported type yo"])
         }
     }
     

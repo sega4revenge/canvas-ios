@@ -26,7 +26,7 @@ protocol UserNotificationCenterProtocol {
 extension UNUserNotificationCenter: UserNotificationCenterProtocol {}
 
 public class NotificationManager {
-    public static let RouteURLKey = "com.instructure.core.router.notification-url"
+    public static let RouteURLKey = "vn.flexidata.lms.core.router.notification-url"
 
     let notificationCenter: UserNotificationCenterProtocol
     let logger: LoggerProtocol

@@ -79,7 +79,7 @@ export function wrapComponentInProviders (moduleName: string, generator: (props:
       global.crashReporter.setString('screenUrl', moduleName)
       global.crashReporter.setBool('screenError', true)
 
-      let domain = `com.instructure.ios.${app.current().appId}`
+      let domain = `vn.flexidata.lms.ios.${app.current().appId}`
       global.crashReporter.recordError({
         domain,
         userInfo: {

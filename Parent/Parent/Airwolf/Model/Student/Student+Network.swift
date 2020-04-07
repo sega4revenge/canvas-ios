@@ -30,7 +30,7 @@ extension Student {
         return try getEnrollments(session: session)
             .flatMap(.concat, { (enrollments) -> SignalProducer<[JSONObject], NSError> in
                 if (!enrollments.any(hasObserverEnrollment)) {
-                    let error = NSError(domain: "com.instructure.Enrollments", code: Error.NoObserverEnrollments, userInfo: [NSLocalizedDescriptionKey: "User has no observer enrollments"])
+                    let error = NSError(domain: "vn.flexidata.lms.Enrollments", code: Error.NoObserverEnrollments, userInfo: [NSLocalizedDescriptionKey: "User has no observer enrollments"])
                     return SignalProducer<[JSONObject], NSError>(error: error)
                 } else {
                     return SignalProducer<[JSONObject], NSError>(value: enrollments)

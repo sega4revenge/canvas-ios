@@ -67,12 +67,12 @@ class APIErroReportTests: CoreTestCase {
     }
 
     func testMaximalPostErrorReportRequest() {
-        let error = NSError(domain: "com.instructure", code: 1, userInfo: [
+        let error = NSError(domain: "vn.flexidata.lms", code: 1, userInfo: [
             NSLocalizedDescriptionKey: "Oops",
             "extra": "info",
         ])
         let max = PostErrorReportRequest(error: error, email: "me@example.com", subject: "s", impact: 4, comments: "comment").body!.error
-        XCTAssertEqual(max.category, "com.instructure")
+        XCTAssertEqual(max.category, "vn.flexidata.lms")
         XCTAssertEqual(max.code, 1)
         XCTAssertEqual(max.comments, """
         comment

@@ -40,7 +40,7 @@ class Persistency {
 
     static let instance = Persistency()
     fileprivate let dispatchQueue: DispatchQueue
-    fileprivate static let defaultDispatchQueueLabel = "com.instructure.pageEvent.persistanceQueue"
+    fileprivate static let defaultDispatchQueueLabel = "vn.flexidata.lms.pageEvent.persistanceQueue"
     fileprivate var queuedEvents = [PageViewEvent]()
     fileprivate static var persistencyStorageFileURL: URL?
     var queueCount: Int {

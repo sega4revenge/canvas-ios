@@ -21,10 +21,10 @@ import XCTest
 
 class NSErrorExtensionsTests: XCTestCase {
     func testInternalError() {
-        XCTAssertEqual(NSError.internalError(), NSError(domain: "com.instructure", code: 0, userInfo: [NSLocalizedDescriptionKey: "Internal Error"]))
+        XCTAssertEqual(NSError.internalError(), NSError(domain: "vn.flexidata.lms", code: 0, userInfo: [NSLocalizedDescriptionKey: "Internal Error"]))
     }
 
     func testInstructureError() {
-        XCTAssertEqual(NSError.instructureError("doh!"), NSError(domain: "com.instructure", code: 0, userInfo: [NSLocalizedDescriptionKey: "doh!"]))
+        XCTAssertEqual(NSError.instructureError("doh!"), NSError(domain: "vn.flexidata.lms", code: 0, userInfo: [NSLocalizedDescriptionKey: "doh!"]))
     }
 }

@@ -63,7 +63,7 @@ RCT_EXPORT_METHOD(requestCompleted:(NSString *)requestID result:(id)result error
     NSError *error = nil;
     if (errorString) {
         NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: errorString };
-        error = [NSError errorWithDomain:@"com.instructure.apibridge" code:0 userInfo:userInfo];
+        error = [NSError errorWithDomain:@"vn.flexidata.lms.apibridge" code:0 userInfo:userInfo];
     }
     callback(result, error);
     self.requests[requestID] = nil;

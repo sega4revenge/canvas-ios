@@ -73,7 +73,7 @@ extension NSError {
         case (NSURLErrorDomain, NSURLErrorServerCertificateUntrusted):
             return AlertDetails(title: networkErrorTitle, description: localizedDescription, actions: reportOrDismiss)
             
-        case ("com.instructure.canvas", 90211): // push channel error. no idea where 90211 comes from.
+        case ("vn.flexidata.lms.canvas", 90211): // push channel error. no idea where 90211 comes from.
             let title = NSLocalizedString("Notification Error", tableName: "Localizable", bundle: .core, comment: "Error title for push notification registration error")
             let description = NSLocalizedString("There was a problem registering your device for push notifications.", tableName: "Localizable", bundle: .core, comment: "Error description for Push Notifications registration error.")
             

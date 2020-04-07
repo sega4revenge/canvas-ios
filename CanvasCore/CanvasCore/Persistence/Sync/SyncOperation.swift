@@ -128,7 +128,7 @@ extension SynchronizedModel where Self: NSManagedObject {
 
         let scheduler: Scheduler
         if context.syncContext.concurrencyType == .privateQueueConcurrencyType {
-            scheduler = QueueScheduler(qos: .userInitiated, name: "com.instructure.SoPersistent")
+            scheduler = QueueScheduler(qos: .userInitiated, name: "vn.flexidata.lms.SoPersistent")
         } else {
             scheduler = UIScheduler()
         }

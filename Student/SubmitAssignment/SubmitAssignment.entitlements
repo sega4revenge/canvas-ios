@@ -5,11 +5,11 @@
 	<key>com.apple.security.application-groups</key>
 	<array>
 		<string>group.vn.flexidata.lms.student</string>
-		<string>group.instructure.shared</string>
+		<string>group.vn.flexidata.lms.student.shared</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.instructure.shared-credentials</string>
+		<string>$(AppIdentifierPrefix)vn.flexidata.lms.shared-credentials</string>
 	</array>
 </dict>
 </plist>

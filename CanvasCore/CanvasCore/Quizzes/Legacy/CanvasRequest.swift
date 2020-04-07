@@ -111,7 +111,7 @@ func makeRequest<T>(_ request: Request<T>, completed: @escaping (Result<Response
                 }
             } else {
                 DispatchQueue.main.async {
-                    let fallbackError = NSError(domain: "com.instructure", code: 0, userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("There was no data!", tableName: "Localizable", bundle: .core, value: "", comment: "")])
+                    let fallbackError = NSError(domain: "vn.flexidata.lms", code: 0, userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("There was no data!", tableName: "Localizable", bundle: .core, value: "", comment: "")])
                     let error = error as NSError? ?? fallbackError
                     completed(.failure(error))
                 }
@@ -128,13 +128,13 @@ private func nextPageURLFromJSON(_ json: Any?, orFromRequestHeaders headers: [An
 }
 
 
-private let queue = DispatchQueue(label: "com.instructure.authkit", attributes: [])
+private let queue = DispatchQueue(label: "vn.flexidata.lms.authkit", attributes: [])
 
 
 
 
 let RequestErrorReportIDKey = "RequestErrorReportIDKey"
-private let RequestErrorDomain = "com.instructure"
+private let RequestErrorDomain = "vn.flexidata.lms"
 
 private typealias ValidationResult = Result<Any?, NSError>
 private func validate(_ response: HTTPURLResponse?, json: Any?) -> ValidationResult {

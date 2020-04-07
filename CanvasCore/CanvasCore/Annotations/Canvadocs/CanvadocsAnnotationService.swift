@@ -112,7 +112,7 @@ class CanvadocsAnnotationService: NSObject {
     
     fileprivate func genericError() -> NSError {
         let description = NSLocalizedString("An unexpected error has occurred.", tableName: nil, bundle: .core, value: "An unexpected error has occurred.", comment: "")
-        return NSError(domain: "com.instructure.annotations", code: -1, userInfo: [NSLocalizedDescriptionKey: description])
+        return NSError(domain: "vn.flexidata.lms.annotations", code: -1, userInfo: [NSLocalizedDescriptionKey: description])
     }
     
     func getMetadata(_ completed: @escaping (MetadataResult)->()) {
@@ -237,7 +237,7 @@ class CanvadocsAnnotationService: NSObject {
                             let dateStr = try decoder.singleValueContainer().decode(String.self)
                             guard let date = CanvadocsAnnotationService.ISO8601MillisecondFormatter.date(from: dateStr) else {
                                 let description = NSLocalizedString("Invalid date received from API.", tableName: nil, bundle: .core, value: "Invalid date received from API.", comment: "")
-                                throw NSError(domain: "com.instructure.annotations", code: -1, userInfo: [NSLocalizedDescriptionKey: description])
+                                throw NSError(domain: "vn.flexidata.lms.annotations", code: -1, userInfo: [NSLocalizedDescriptionKey: description])
                             }
                             return date
                         }
@@ -285,7 +285,7 @@ class CanvadocsAnnotationService: NSObject {
                     decoder.dateDecodingStrategy = .custom { decoder in
                         let dateStr = try decoder.singleValueContainer().decode(String.self)
                         guard let date = CanvadocsAnnotationService.ISO8601MillisecondFormatter.date(from: dateStr) else {
-                            throw NSError(domain: "com.instructure.annotations", code: -1, userInfo: [NSLocalizedFailureReasonErrorKey: "Invalid date received from API"])
+                            throw NSError(domain: "vn.flexidata.lms.annotations", code: -1, userInfo: [NSLocalizedFailureReasonErrorKey: "Invalid date received from API"])
                         }
                         return date
                     }

@@ -9,6 +9,7 @@
 		<string>applinks:sso.canvaslms.com</string>
 		<string>applinks:sso.beta.canvaslms.com</string>
 		<string>applinks:sso.test.canvaslms.com</string>
+		<string>webcredentials:example.com</string>
 	</array>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
@@ -28,16 +29,17 @@
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.instructure.icanvas</string>
-		<string>group.com.instructure.Calendar</string>
-		<string>group.com.instructure.Contexts</string>
-		<string>group.com.instructure.Courses</string>
-		<string>group.instructure.shared</string>
+		<string>group.vn.flexidata.lms.student.Calendar</string>
+		<string>group.vn.flexidata.lms.student.Contexts</string>
+		<string>group.vn.flexidata.lms.student.Courses</string>
+		<string>group.vn.flexidata.lms.student.icanvas</string>
+		<string>group.vn.flexidata.lms.student.shared</string>
+		<string>group.vn.flexidata.lms.student</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
 		<string>$(AppIdentifierPrefix)vn.flexidata.lms.student</string>
-		<string>$(AppIdentifierPrefix)com.instructure.shared-credentials</string>
+		<string>$(AppIdentifierPrefix)vn.flexidata.lms.student.shared-credentials</string>
 	</array>
 </dict>
 </plist>

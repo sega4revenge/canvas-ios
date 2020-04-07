@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "492704721CF4AF7100C631C6"
-               BuildableName = "Student.app"
+               BuildableName = "Ho&#x323;c Sinh.app"
                BlueprintName = "Student"
                ReferencedContainer = "container:Student.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Teacher.app"
+               BuildableName = "Gia&#x301;o Vie&#x302;n.app"
                BlueprintName = "Teacher"
                ReferencedContainer = "container:../rn/Teacher/ios/Teacher.xcodeproj">
             </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "492704721CF4AF7100C631C6"
-            BuildableName = "Student.app"
+            BuildableName = "Ho&#x323;c Sinh.app"
             BlueprintName = "Student"
             ReferencedContainer = "container:Student.xcodeproj">
          </BuildableReference>
@@ -98,7 +98,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5E6441861C3EE2E0003D7397"
-            BuildableName = "Parent.app"
+            BuildableName = "Phu&#x323; Huynh.app"
             BlueprintName = "Parent"
             ReferencedContainer = "container:../Parent/Parent.xcodeproj">
          </BuildableReference>
@@ -112,7 +112,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "492704721CF4AF7100C631C6"
-            BuildableName = "Student.app"
+            BuildableName = "Ho&#x323;c Sinh.app"
             BlueprintName = "Student"
             ReferencedContainer = "container:Student.xcodeproj">
          </BuildableReference>
@@ -126,7 +126,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Teacher.app"
+            BuildableName = "Gia&#x301;o Vie&#x302;n.app"
             BlueprintName = "Teacher"
             ReferencedContainer = "container:../rn/Teacher/ios/Teacher.xcodeproj">
          </BuildableReference>
@@ -220,7 +220,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "492704721CF4AF7100C631C6"
-            BuildableName = "Student.app"
+            BuildableName = "Ho&#x323;c Sinh.app"
             BlueprintName = "Student"
             ReferencedContainer = "container:Student.xcodeproj">
          </BuildableReference>
@@ -237,7 +237,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "492704721CF4AF7100C631C6"
-            BuildableName = "Student.app"
+            BuildableName = "Ho&#x323;c Sinh.app"
             BlueprintName = "Student"
             ReferencedContainer = "container:Student.xcodeproj">
          </BuildableReference>
