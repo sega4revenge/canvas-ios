@@ -132,7 +132,7 @@ open class AudioRecorderView: UIView {
                 let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String ?? "Canvas"
                 let message = NSLocalizedString("You must grant \(appName) Microphone access in the Settings app in order to record audio.", tableName: "Localizable", bundle: .core, value: "", comment: "permission was rejected")
                 
-                let error = NSError(domain: "com.instructure", code: 0, userInfo: [NSLocalizedDescriptionKey: message])
+                let error = NSError(domain: "vn.flexidata.lms", code: 0, userInfo: [NSLocalizedDescriptionKey: message])
                 view.notifyUserOfError(error, title: title, dismissToState: .preRecording(.denied))
                 
             case .preRecording(AVAudioSession.RecordPermission.undetermined):
@@ -321,7 +321,7 @@ extension AudioRecorderView: AudioRecorderDelegate {
                 player.delegate = self
                 setState(.paused(player), animated: true)
             } else {
-                let error = NSError(domain: "com.instructure", code: 0, userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("The file does not exist.", tableName: "Localizable", bundle: .core, value: "", comment: "Error message for a file missing")])
+                let error = NSError(domain: "vn.flexidata.lms", code: 0, userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("The file does not exist.", tableName: "Localizable", bundle: .core, value: "", comment: "Error message for a file missing")])
                 notifyUserOfError(error, title: recordingErrorTitle)
             }
         } catch let error as NSError {

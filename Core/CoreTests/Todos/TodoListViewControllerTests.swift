@@ -60,7 +60,7 @@ class TodoListViewControllerTests: CoreTestCase {
         controller.view.layoutIfNeeded()
         controller.viewWillAppear(false)
         controller.tableView.delegate?.tableView?(controller.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
-        XCTAssert(router.lastRoutedTo(.parse("https://canvas.instructure.com/courses/1/assignments/1")))
+        XCTAssert(router.lastRoutedTo(.parse("https://lms.flexidata.vn/courses/1/assignments/1")))
     }
 
     func testIgnore() {

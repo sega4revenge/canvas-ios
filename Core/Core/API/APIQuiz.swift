@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/quizzes.html#Quiz
+// https://lms.flexidata.vn/doc/api/quizzes.html#Quiz
 public struct APIQuiz: Codable, Equatable {
     let access_code: String?
     let allowed_attempts: Int
@@ -65,7 +65,7 @@ public struct APIQuiz: Codable, Equatable {
     // let version_number: Int
 }
 
-// https://canvas.instructure.com/doc/api/quiz_submissions.html#QuizSubmission
+// https://lms.flexidata.vn/doc/api/quiz_submissions.html#QuizSubmission
 public struct APIQuizSubmission: Codable {
     let attempt: Int?
     let attempts_left: Int
@@ -90,7 +90,7 @@ public struct APIQuizSubmission: Codable {
     // let time_spent: TimeInterval?
 }
 
-// https://canvas.instructure.com/doc/api/quizzes.html#method.quizzes/quizzes_api.index
+// https://lms.flexidata.vn/doc/api/quizzes.html#method.quizzes/quizzes_api.index
 public struct GetQuizzesRequest: APIRequestable {
     public typealias Response = [APIQuiz]
 
@@ -106,7 +106,7 @@ public struct GetQuizzesRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/quizzes.html#method.quizzes/quizzes_api.show
+// https://lms.flexidata.vn/doc/api/quizzes.html#method.quizzes/quizzes_api.show
 public struct GetQuizRequest: APIRequestable {
     public typealias Response = APIQuiz
 
@@ -119,7 +119,7 @@ public struct GetQuizRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/quiz_submissions.html#method.quizzes/quiz_submissions_api.submission
+// https://lms.flexidata.vn/doc/api/quiz_submissions.html#method.quizzes/quiz_submissions_api.submission
 public struct GetQuizSubmissionRequest: APIRequestable {
     public struct Response: Codable {
         let quiz_submissions: [APIQuizSubmission]
@@ -134,7 +134,7 @@ public struct GetQuizSubmissionRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/quiz_submissions.html#method.quizzes/quiz_submissions_api.index
+// https://lms.flexidata.vn/doc/api/quiz_submissions.html#method.quizzes/quiz_submissions_api.index
 public struct GetAllQuizSubmissionsRequest: APIRequestable {
     public struct Response: Codable {
         let quiz_submissions: [APIQuizSubmission]

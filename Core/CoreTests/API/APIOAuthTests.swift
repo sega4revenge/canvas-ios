@@ -21,7 +21,7 @@ import XCTest
 
 class APIOAuthRequestableTests: XCTestCase {
     func testGetMobileVerifyRequest() {
-        XCTAssertEqual(GetMobileVerifyRequest(domain: "cgnu").path, "https://canvas.instructure.com/api/v1/mobile_verify.json")
+        XCTAssertEqual(GetMobileVerifyRequest(domain: "cgnu").path, "https://lms.flexidata.vn/api/v1/mobile_verify.json")
         XCTAssertEqual(GetMobileVerifyRequest(domain: "cgnu").queryItems, [
             URLQueryItem(name: "domain", value: "cgnu"),
         ])

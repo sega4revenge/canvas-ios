@@ -149,7 +149,7 @@ describe('AnnouncementsList', () => {
   })
 
   it('navigates to announcement when row tapped', () => {
-    const announcement = template.discussion({ html_url: 'https://canvas.instructure.com/courses/1/discussions/2' })
+    const announcement = template.discussion({ html_url: 'https://lms.flexidata.vn/courses/1/discussions/2' })
     props.navigator.show = jest.fn()
     props.announcements = [announcement]
     let tree = shallow(<AnnouncementsList {...props} />)

@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/search.html#method.search.recipients
+// https://lms.flexidata.vn/doc/api/search.html#method.search.recipients
 public struct APISearchRecipient: Codable, Equatable {
     public let id: ID
     public let name: String

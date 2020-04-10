@@ -18,13 +18,13 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/services.html#method.services_api.show_kaltura_config
+// https://lms.flexidata.vn/doc/api/services.html#method.services_api.show_kaltura_config
 struct GetMediaServiceRequest: APIRequestable {
     typealias Response = APIMediaService
     let path = "services/kaltura"
 }
 
-// https://canvas.instructure.com/doc/api/services.html#method.services_api.start_kaltura_session
+// https://lms.flexidata.vn/doc/api/services.html#method.services_api.start_kaltura_session
 struct PostMediaSessionRequest: APIRequestable {
     typealias Response = APIMediaSession
     let method = APIMethod.post

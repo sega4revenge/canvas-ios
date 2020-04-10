@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/tabs.html#Tab
+// https://lms.flexidata.vn/doc/api/tabs.html#Tab
 public struct APITab: Codable, Equatable {
     let id: ID
     let html_url: URL

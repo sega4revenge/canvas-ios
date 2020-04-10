@@ -18,7 +18,7 @@
 
 import Core
 
-// https://canvas.instructure.com/doc/api/quiz_questions.html#QuizQuestion
+// https://lms.flexidata.vn/doc/api/quiz_questions.html#QuizQuestion
 public struct APIQuizQuestion: Codable {
     public let id: String
     public let quiz_id: String
@@ -34,7 +34,7 @@ public struct APIQuizQuestion: Codable {
     public let answer: APIQuizAnswerValue?
 }
 
-// https://canvas.instructure.com/doc/api/quiz_submission_questions.html#QuizSubmissionQuestion
+// https://lms.flexidata.vn/doc/api/quiz_submission_questions.html#QuizSubmissionQuestion
 public struct APIQuizSubmissionQuestion: Codable {
     public let id: String
     public let flagged: Bool
@@ -49,7 +49,7 @@ public struct APIQuizAnswer: Codable {
     public let html: String
 }
 
-// https://canvas.instructure.com/doc/api/quiz_submission_questions.html#Question+Answer+Formats-appendix
+// https://lms.flexidata.vn/doc/api/quiz_submission_questions.html#Question+Answer+Formats-appendix
 public enum APIQuizAnswerValue: Codable {
     case double(Double)
     case string(String)

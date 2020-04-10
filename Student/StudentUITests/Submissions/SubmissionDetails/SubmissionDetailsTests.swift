@@ -172,8 +172,8 @@ class SubmissionDetailsTests: StudentUITestCase {
         mockBaseRequests()
         let url = Bundle(for: SubmissionDetailsTests.self).url(forResource: "empty", withExtension: "pdf")
         let previewURL = URL(string: "https://preview.url")!
-        let sessionURL = URL(string: "https://canvas.instructure.com/session/123")!
-        let downloadURL = URL(string: "https://canvas.instructure.com/session/123/download")!
+        let sessionURL = URL(string: "https://lms.flexidata.vn/session/123")!
+        let downloadURL = URL(string: "https://lms.flexidata.vn/session/123/download")!
         let assignment = mock(assignment: .make(submission_types: [ .online_upload ]))
         mockData(GetSubmissionRequest(context: course, assignmentID: assignment.id.value, userID: "1"), value: APISubmission.make(
             submission_type: .online_upload,
@@ -247,7 +247,7 @@ class SubmissionDetailsTests: StudentUITestCase {
                 APIDiscussionEntry.make(id: "1", message: "First entry"),
                 APIDiscussionEntry.make(id: "2", message: "Second entry"),
             ],
-            preview_url: URL(string: "https://canvas.instructure.com")
+            preview_url: URL(string: "https://lms.flexidata.vn")
         ))
 
         show("/courses/\(course.id)/assignments/\(assignment.id)/submissions/1")

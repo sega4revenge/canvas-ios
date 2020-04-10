@@ -104,7 +104,7 @@ public class UITestHelpers {
     weak var appDelegate: UIApplicationDelegate?
     let decoder = JSONDecoder()
     let encoder = JSONEncoder()
-    let pasteboardType = "com.instructure.ui-test-helper"
+    let pasteboardType = "vn.flexidata.lms.ui-test-helper"
     let window: ActAsUserWindow?
 
     var ipcAppServer: IPCAppServer?
@@ -114,7 +114,7 @@ public class UITestHelpers {
         self.appDelegate = appDelegate
         self.window = appDelegate.window as? ActAsUserWindow
 
-        Keychain.app = Keychain(serviceName: "com.instructure.shared-credentials.tests")
+        Keychain.app = Keychain(serviceName: "vn.flexidata.lms.shared-credentials.tests")
         CacheManager.clear()
         UserDefaults.standard.set(true, forKey: "IS_UI_TEST")
         if let portName = ProcessInfo.processInfo.environment["APP_IPC_PORT_NAME"] {

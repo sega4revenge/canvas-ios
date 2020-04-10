@@ -58,11 +58,11 @@ class LoginStartViewControllerTests: CoreTestCase {
 
         let first = controller.previousLoginsTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? LoginStartSessionCell
         XCTAssertEqual(first?.nameLabel?.text, "Bob")
-        XCTAssertEqual(first?.domainLabel?.text, "canvas.instructure.com")
+        XCTAssertEqual(first?.domainLabel?.text, "lms.flexidata.vn")
 
         let second = controller.previousLoginsTableView.cellForRow(at: IndexPath(row: 1, section: 0)) as? LoginStartMDMLoginCell
         XCTAssertEqual(second?.nameLabel?.text, "apple")
-        XCTAssertEqual(second?.domainLabel?.text, "canvas.instructure.com")
+        XCTAssertEqual(second?.domainLabel?.text, "lms.flexidata.vn")
 
         controller.previousLoginsTableView.delegate?.tableView?(
             controller.previousLoginsTableView,

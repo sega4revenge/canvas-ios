@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/brand_configs.html#method.brand_configs_api.show
+// https://lms.flexidata.vn/doc/api/brand_configs.html#method.brand_configs_api.show
 public struct GetBrandVariablesRequest: APIRequestable {
     public typealias Response = APIBrandVariables
 

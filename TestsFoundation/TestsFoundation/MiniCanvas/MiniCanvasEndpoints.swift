@@ -69,7 +69,7 @@ enum MiniCanvasEndpoints {
 
     public static let endpoints: [MiniCanvasServer.Endpoint] = [
         // MARK: Account Notifications
-        // https://canvas.instructure.com/doc/api/account_notifications.html
+        // https://lms.flexidata.vn/doc/api/account_notifications.html
         .apiRequest(GetAccountNotificationsRequest()) { request in request.state.accountNotifications },
         .apiRequest(DeleteAccountNotificationRequest(id: ":id")) { request in
             let id = ID(request[":id"]!)
@@ -78,13 +78,13 @@ enum MiniCanvasEndpoints {
         },
 
         // MARK: Assignment Groups
-        // https://canvas.instructure.com/doc/api/assignment_groups.html
+        // https://lms.flexidata.vn/doc/api/assignment_groups.html
         .apiRequest(GetAssignmentGroupsRequest(courseID: Pattern.courseID)) { request in
             try lookupCourse(forRequest: request).assignmentGroups
         },
 
         // MARK: Assignments
-        // https://canvas.instructure.com/doc/api/assignments.html
+        // https://lms.flexidata.vn/doc/api/assignments.html
         .apiRequest(GetAssignmentsRequest(courseID: Pattern.courseID)) { request in
             try lookupCourse(forRequest: request).assignments.map { $0.api }
         },
@@ -109,24 +109,24 @@ enum MiniCanvasEndpoints {
         },
 
         // MARK: Brand
-        // https://canvas.instructure.com/doc/api/brand_configs.html
+        // https://lms.flexidata.vn/doc/api/brand_configs.html
         .apiRequest(GetBrandVariablesRequest()) { request in request.state.brandVariables },
 
         // MARK: Conversations
-        // https://canvas.instructure.com/doc/api/conversations.html
+        // https://lms.flexidata.vn/doc/api/conversations.html
         .apiRequest(GetConversationsUnreadCountRequest()) { request in
             .init(unread_count: request.state.unreadCount)
         },
 
         // MARK: Courses
-        // https://canvas.instructure.com/doc/api/conversations.html
+        // https://lms.flexidata.vn/doc/api/conversations.html
         .apiRequest(GetCoursesRequest()) { request in request.state.courses.map { $0.api } },
         .apiRequest(GetCourseRequest(courseID: Pattern.courseID)) { request in
             try lookupCourse(forRequest: request).api
         },
 
         // MARK: Enrollments
-        // https://canvas.instructure.com/doc/api/enrollments.html
+        // https://lms.flexidata.vn/doc/api/enrollments.html
         .apiRequest(GetEnrollmentsRequest(context: ContextModel.currentUser)) { request in
             request.state.userEnrollments()
         },
@@ -135,24 +135,24 @@ enum MiniCanvasEndpoints {
         },
 
         // MARK: Feature Flags
-        // https://canvas.instructure.com/doc/api/feature_flags.html
+        // https://lms.flexidata.vn/doc/api/feature_flags.html
         .apiRequest(GetEnabledFeatureFlagsRequest(context: Pattern.courseContext)) { request in
             try lookupCourse(forRequest: request).featureFlags
         },
 
         // MARK: Grading Periods
-        // https://canvas.instructure.com/doc/api/grading_periods.html
+        // https://lms.flexidata.vn/doc/api/grading_periods.html
         .apiRequest(GetGradingPeriodsRequest(courseID: Pattern.courseID)) { request in
             try lookupCourse(forRequest: request).gradingPeriods
         },
 
         // MARK: Groups
-        // https://canvas.instructure.com/doc/api/groups.html
+        // https://lms.flexidata.vn/doc/api/groups.html
         .apiRequest(GetGroupsRequest(context: ContextModel.currentUser)) { _ in [] },
         .apiRequest(GetGroupsRequest(context: Pattern.courseContext)) { _ in [] },
 
         // MARK: OAuth
-        // https://canvas.instructure.com/doc/api/file.oauth_endpoints.html
+        // https://lms.flexidata.vn/doc/api/file.oauth_endpoints.html
         .rest("/login/oauth2/auth") { request in
             guard let redirectUri = request.firstQueryParam(named: "redirect_uri" ) else {
                 return .badRequest(nil)
@@ -169,7 +169,7 @@ enum MiniCanvasEndpoints {
         },
 
         // MARK: Quiz Submissions
-        // https://canvas.instructure.com/doc/api/quiz_submissions.html
+        // https://lms.flexidata.vn/doc/api/quiz_submissions.html
         .apiRequest(GetAllQuizSubmissionsRequest(courseID: Pattern.courseID, quizID: Pattern.quizID)) { request in
             let quiz = try lookupQuiz(forRequest: request)
             return GetAllQuizSubmissionsRequest.Response(
@@ -179,7 +179,7 @@ enum MiniCanvasEndpoints {
         },
 
         // MARK: Quizzes
-        // https://canvas.instructure.com/doc/api/quizzes.html
+        // https://lms.flexidata.vn/doc/api/quizzes.html
         .apiRequest(GetQuizzesRequest(courseID: Pattern.courseID)) { request in
             try lookupCourse(forRequest: request).quizzes.map { $0.api }
         },
@@ -188,11 +188,11 @@ enum MiniCanvasEndpoints {
         },
 
         // MARK: Sections
-        // https://canvas.instructure.com/doc/api/sections.html
+        // https://lms.flexidata.vn/doc/api/sections.html
         .apiRequest(GetCourseSectionsRequest(courseID: Pattern.courseID)) { _ in [] },
 
         // MARK: Submissions
-        // https://canvas.instructure.com/doc/api/submissions.html
+        // https://lms.flexidata.vn/doc/api/submissions.html
         .apiRequest(GetSubmissionSummaryRequest(context: Pattern.courseContext, assignmentID: Pattern.assignmentID)) { request in
             .init(graded: 42, ungraded: 42, not_submitted: 42)
         },
@@ -235,13 +235,13 @@ enum MiniCanvasEndpoints {
         },
 
         // MARK: Tabs
-        // https://canvas.instructure.com/doc/api/tabs.html
+        // https://lms.flexidata.vn/doc/api/tabs.html
         .apiRequest(GetTabsRequest(context: Pattern.courseContext)) { request in
             try lookupCourse(forRequest: request).tabs
         },
 
         // MARK: Users
-        // https://canvas.instructure.com/doc/api/users.html
+        // https://lms.flexidata.vn/doc/api/users.html
         .apiRequest(GetUserProfileRequest(userID: Pattern.userID)) { request in
             let user = try lookupUser(forRequest: request)
             return APIProfile.make(

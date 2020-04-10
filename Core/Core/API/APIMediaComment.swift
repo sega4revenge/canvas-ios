@@ -34,12 +34,12 @@ public struct APIMediaComment: Codable, Equatable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/services.html#method.services_api.show_kaltura_config
+// https://lms.flexidata.vn/doc/api/services.html#method.services_api.show_kaltura_config
 struct APIMediaService: Codable {
     let domain: String
 }
 
-// https://canvas.instructure.com/doc/api/services.html#method.services_api.start_kaltura_session
+// https://lms.flexidata.vn/doc/api/services.html#method.services_api.start_kaltura_session
 struct APIMediaSession: Codable {
     let ks: String
 }

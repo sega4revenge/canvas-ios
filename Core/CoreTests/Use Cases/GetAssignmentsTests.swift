@@ -29,7 +29,7 @@ class GetAssignmentsTests: CoreTestCase {
             description: "some description...",
             points_possible: 10,
             due_at: nil,
-            html_url: URL(string: "https://canvas.instructure.com/courses/1/assignments/2")!,
+            html_url: URL(string: "https://lms.flexidata.vn/courses/1/assignments/2")!,
             submission: nil,
             grading_type: .pass_fail,
             submission_types: [ .on_paper, .external_tool ],
@@ -50,7 +50,7 @@ class GetAssignmentsTests: CoreTestCase {
         XCTAssertEqual(assignment.details, "some description...")
         XCTAssertEqual(assignment.pointsPossible, 10)
         XCTAssertNil(assignment.dueAt)
-        XCTAssertEqual(assignment.htmlURL?.absoluteString, "https://canvas.instructure.com/courses/1/assignments/2")
+        XCTAssertEqual(assignment.htmlURL?.absoluteString, "https://lms.flexidata.vn/courses/1/assignments/2")
         XCTAssertEqual(assignment.gradingType, .pass_fail)
         XCTAssertEqual(assignment.submissionTypes, [.on_paper, .external_tool])
         XCTAssertEqual(assignment.position, 0)
@@ -179,7 +179,7 @@ class GetAssignmentsTests: CoreTestCase {
             description: "some description...",
             points_possible: 10,
             due_at: nil,
-            html_url: URL(string: "https://canvas.instructure.com/courses/1/assignments/2")!,
+            html_url: URL(string: "https://lms.flexidata.vn/courses/1/assignments/2")!,
             submission: nil,
             grading_type: .pass_fail,
             submission_types: [ .on_paper, .external_tool ],
@@ -197,7 +197,7 @@ class GetAssignmentsTests: CoreTestCase {
         XCTAssertEqual(assignment.details, "some description...")
         XCTAssertEqual(assignment.pointsPossible, 10)
         XCTAssertNil(assignment.dueAt)
-        XCTAssertEqual(assignment.htmlURL?.absoluteString, "https://canvas.instructure.com/courses/1/assignments/2")
+        XCTAssertEqual(assignment.htmlURL?.absoluteString, "https://lms.flexidata.vn/courses/1/assignments/2")
         XCTAssertEqual(assignment.gradingType, .pass_fail)
         XCTAssertEqual(assignment.submissionTypes, [.on_paper, .external_tool])
         XCTAssertEqual(assignment.position, 0)

@@ -37,7 +37,7 @@ struct ResponsePage<T> {
             return makeRequest(nextPage, completed: response)
         } else {
             // YOU SHOULDN'T EVER GET HERE.
-            let error = NSError(domain: "com.instructure.authentication", code: 0, userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("The Pages are gone!? Why are the pages always gone?", tableName: "Localizable", bundle: .core, value: "", comment: "This shouldn't ever happen.")])
+            let error = NSError(domain: "vn.flexidata.lms.authentication", code: 0, userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("The Pages are gone!? Why are the pages always gone?", tableName: "Localizable", bundle: .core, value: "", comment: "This shouldn't ever happen.")])
             response(.failure(error))
             return nil
         }

@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/modules.html#method.context_modules_api.index
+// https://lms.flexidata.vn/doc/api/modules.html#method.context_modules_api.index
 public struct GetModulesRequest: APIRequestable {
     public typealias Response = [APIModule]
     public enum Include: String {
@@ -115,7 +115,7 @@ public struct GetModuleItemSequenceRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/modules.html#method.context_module_items_api.mark_item_read
+// https://lms.flexidata.vn/doc/api/modules.html#method.context_module_items_api.mark_item_read
 public struct PostMarkModuleItemRead: APIRequestable {
     public typealias Response = APINoContent
 

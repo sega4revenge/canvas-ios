@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/notification_preferences.html#NotificationPreference
+// https://lms.flexidata.vn/doc/api/notification_preferences.html#NotificationPreference
 public struct APINotificationPreference: Codable {
     let notification: String
     let category: String
@@ -55,7 +55,7 @@ public enum NotificationFrequency: String, CaseIterable, Codable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/notification_preferences.html#method.notification_preferences.index
+// https://lms.flexidata.vn/doc/api/notification_preferences.html#method.notification_preferences.index
 struct GetNotificationPreferencesRequest: APIRequestable {
     struct Response: Codable {
         let notification_preferences: [APINotificationPreference]
@@ -68,7 +68,7 @@ struct GetNotificationPreferencesRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/notification_preferences.html#method.notification_preferences.update_all
+// https://lms.flexidata.vn/doc/api/notification_preferences.html#method.notification_preferences.update_all
 struct PutNotificationPreferencesRequest: APIRequestable {
     typealias Response = GetNotificationPreferencesRequest.Response
     struct Body: Encodable, Equatable {

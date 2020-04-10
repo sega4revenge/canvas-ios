@@ -18,8 +18,8 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/favorites.html#method.favorites.add_favorite_course
-// https://canvas.instructure.com/doc/api/favorites.html#method.favorites.add_favorite_groups
+// https://lms.flexidata.vn/doc/api/favorites.html#method.favorites.add_favorite_course
+// https://lms.flexidata.vn/doc/api/favorites.html#method.favorites.add_favorite_groups
 struct PostFavoriteRequest: APIRequestable {
     typealias Response = APIFavorite
 
@@ -31,8 +31,8 @@ struct PostFavoriteRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/favorites.html#method.favorites.remove_favorite_course
-// https://canvas.instructure.com/doc/api/favorites.html#method.favorites.remove_favorite_groups
+// https://lms.flexidata.vn/doc/api/favorites.html#method.favorites.remove_favorite_course
+// https://lms.flexidata.vn/doc/api/favorites.html#method.favorites.remove_favorite_groups
 struct DeleteFavoriteRequest: APIRequestable {
     typealias Response = APIFavorite
 

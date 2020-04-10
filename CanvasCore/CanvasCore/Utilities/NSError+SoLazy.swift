@@ -36,7 +36,7 @@ extension NSError {
         if let a = apiURL           { userInfo[ErrorURLKey] = a }
         if let d = data             { userInfo[ErrorDataKey] = String(data: d, encoding: .utf8) }
 
-        self.init(domain: "com.instructure." + subdomain, code: code, userInfo: userInfo)
+        self.init(domain: "vn.flexidata.lms." + subdomain, code: code, userInfo: userInfo)
     }
     
     @objc public var title: String? {

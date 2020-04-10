@@ -27,10 +27,10 @@ enum FileUploaderError: Error {
 }
 
 open class UploadManager: NSObject, URLSessionDelegate, URLSessionTaskDelegate, URLSessionDataDelegate {
-    public static let AssignmentSubmittedNotification = NSNotification.Name(rawValue: "com.instructure.core.assignment-submitted")
+    public static let AssignmentSubmittedNotification = NSNotification.Name(rawValue: "vn.flexidata.lms.core.assignment-submitted")
     public typealias Store = Core.Store<LocalUseCase<File>>
 
-    public static var shared = UploadManager(identifier: "com.instructure.core.file-uploads")
+    public static var shared = UploadManager(identifier: "vn.flexidata.lms.core.file-uploads")
 
     public let identifier: String
     public let sharedContainerIdentifier: String?

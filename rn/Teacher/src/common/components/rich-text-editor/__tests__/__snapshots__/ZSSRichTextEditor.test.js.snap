@@ -78,7 +78,7 @@ Array [
     "zss_editor.prepareInsert();",
   ],
   Array [
-    "zss_editor.insertHTML('https:\\\\/\\\\/canvas.instructure.com\\\\/files\\\\/1\\\\/download');",
+    "zss_editor.insertHTML('https:\\\\/\\\\/lms.flexidata.vn\\\\/files\\\\/1\\\\/download');",
   ],
 ]
 `;
@@ -177,7 +177,7 @@ Array [
 exports[`ZSSRichTextEditor triggers insertImage 1`] = `
 Array [
   Array [
-    "zss_editor.insertImage('https://canvas.instructure.com/files/1/download');",
+    "zss_editor.insertImage('https://lms.flexidata.vn/files/1/download');",
   ],
 ]
 `;

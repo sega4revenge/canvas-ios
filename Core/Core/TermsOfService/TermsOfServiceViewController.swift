@@ -22,7 +22,7 @@ public struct APITermsOfService: Codable, Equatable {
     let content: String
 }
 
-// https://canvas.instructure.com/doc/api/all_resources.html#method.accounts.terms_of_services
+// https://lms.flexidata.vn/doc/api/all_resources.html#method.accounts.terms_of_services
 struct APITermsOfServiceRequestable: APIRequestable {
     typealias Response = APITermsOfService
 

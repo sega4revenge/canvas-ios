@@ -26,7 +26,7 @@ struct APIVerifyClient: Codable, Equatable {
     let client_secret: String?
 }
 
-// https://canvas.instructure.com/doc/api/file.oauth_endpoints.html#post-login-oauth2-token
+// https://lms.flexidata.vn/doc/api/file.oauth_endpoints.html#post-login-oauth2-token
 public struct APIOAuthToken: Codable, Equatable {
     public struct RealUser: Codable, Equatable {
         let id: ID
@@ -58,7 +58,7 @@ struct GetMobileVerifyRequest: APIRequestable {
         if let overrideUrl = ProcessInfo.processInfo.environment["OVERRIDE_MOBILE_VERIFY_URL"] {
             return overrideUrl
         }
-        return "https://canvas.instructure.com/api/v1/mobile_verify.json"
+        return "https://lms.flexidata.vn/api/v1/mobile_verify.json"
     }
 
     var query: [APIQueryItem] {
@@ -73,7 +73,7 @@ struct GetMobileVerifyRequest: APIRequestable {
     ]
 }
 
-// https://canvas.instructure.com/doc/api/file.oauth_endpoints.html#post-login-oauth2-token
+// https://lms.flexidata.vn/doc/api/file.oauth_endpoints.html#post-login-oauth2-token
 struct PostLoginOAuthRequest: APIRequestable {
     typealias Response = APIOAuthToken
 
@@ -121,7 +121,7 @@ struct PostLoginOAuthRequest: APIRequestable {
     ]
 }
 
-// https://canvas.instructure.com/doc/api/file.oauth_endpoints.html#delete-login-oauth2-token
+// https://lms.flexidata.vn/doc/api/file.oauth_endpoints.html#delete-login-oauth2-token
 public struct DeleteLoginOAuthRequest: APIRequestable {
     public typealias Response = APINoContent
 
@@ -142,7 +142,7 @@ public struct DeleteLoginOAuthRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/file.oauth_endpoints.html#get-login-session-token
+// https://lms.flexidata.vn/doc/api/file.oauth_endpoints.html#get-login-session-token
 public struct GetWebSessionRequest: APIRequestable {
     public struct Response: Codable {
         public let session_url: URL

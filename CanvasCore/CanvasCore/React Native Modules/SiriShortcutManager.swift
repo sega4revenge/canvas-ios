@@ -21,7 +21,7 @@ import ReactiveSwift
 
 public class SiriShortcutManager: NSObject {
     enum ShortcutType: String {
-        case grades = "com.instructure.siri.shortcut.getgrades"
+        case grades = "vn.flexidata.lms.siri.shortcut.getgrades"
 
         func title(userInfo: [String: Any]) -> String {
             switch self {

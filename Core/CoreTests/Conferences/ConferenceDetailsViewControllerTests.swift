@@ -90,7 +90,7 @@ class ConferenceDetailsViewControllerTests: CoreTestCase {
 
         controller.tableView.selectRow(at: index0, animated: false, scrollPosition: .none)
         controller.tableView.delegate?.tableView?(controller.tableView, didSelectRowAt: index0)
-        XCTAssert(router.lastRoutedTo(.parse("https://canvas.instructure.com/playback")))
+        XCTAssert(router.lastRoutedTo(.parse("https://lms.flexidata.vn/playback")))
         XCTAssertNil(controller.tableView.indexPathForSelectedRow)
     }
 }

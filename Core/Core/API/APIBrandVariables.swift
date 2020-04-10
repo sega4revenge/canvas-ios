@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/brand_configs.html
+// https://lms.flexidata.vn/doc/api/brand_configs.html
 public struct APIBrandVariables: Codable, Equatable {
     let button_primary_bgd: String?
     let button_primary_text: String?

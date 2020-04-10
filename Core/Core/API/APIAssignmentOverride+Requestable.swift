@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/assignments.html#method.assignment_overrides.create
+// https://lms.flexidata.vn/doc/api/assignments.html#method.assignment_overrides.create
 struct CreateAssignmentOverrideRequest: APIRequestable {
     typealias Response = APIAssignmentOverride
     struct Body: Codable, Equatable {

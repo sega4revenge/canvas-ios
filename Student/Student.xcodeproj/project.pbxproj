@@ -671,6 +671,15 @@
 		7DF9CAFE1FE1CD26007D97AD /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7DF9CB001FE1CD27007D97AD /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		873A063BCDC8884CD0C89EAD /* Pods-CanvasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvasTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CanvasTests/Pods-CanvasTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A6A152F244050E900E815DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A6A15302440511200E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8A6A15312440511400E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		8A6A15322440511400E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A6A15332440511500E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8A6A15342440511500E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A6A15352440511700E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8A6A15362440511700E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8A6A15372440511800E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9734351423866A7B002E9CE5 /* ActivityStreamViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStreamViewControllerTests.swift; sourceTree = "<group>"; };
 		9767F2A12383C741006633CA /* ActivityStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityStreamViewController.swift; sourceTree = "<group>"; };
 		9767F2A22383C741006633CA /* ActivityStreamViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActivityStreamViewController.storyboard; sourceTree = "<group>"; };
@@ -1978,7 +1987,6 @@
 				TargetAttributes = {
 					3B6DCCA41FB502CD005EE8D2 = {
 						CreatedOnToolsVersion = 9.1;
-						DevelopmentTeam = B6333T4PXQ;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1992,7 +2000,6 @@
 					};
 					492704721CF4AF7100C631C6 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = B6333T4PXQ;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -2026,7 +2033,6 @@
 					};
 					B1BB7A8122BAC820006CA068 = {
 						CreatedOnToolsVersion = 10.2.1;
-						DevelopmentTeam = B6333T4PXQ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -2106,6 +2112,7 @@
 				ca,
 				"en-CA",
 				it,
+				vi,
 			);
 			mainGroup = 4927046A1CF4AF7100C631C6;
 			productRefGroup = 492704741CF4AF7100C631C6 /* Products */;
@@ -2623,6 +2630,8 @@
 				5B62ABEA2430858F00721845 /* ca */,
 				5BA944FE243085B200DCD71C /* en-CA */,
 				5B04140E243085DF0099D696 /* it */,
+				8A6A152F244050E900E815DC /* en */,
+				8A6A15322440511400E815DC /* vi */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2656,6 +2665,7 @@
 				7D349CEB21430EEA004C1074 /* en-GB-instukhe */,
 				7D349CF721430F11004C1074 /* nb-instk12 */,
 				7D349D0321430F34004C1074 /* sv-instk12 */,
+				8A6A15302440511200E815DC /* vi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2695,6 +2705,7 @@
 				5B62ABEB2430858F00721845 /* ca */,
 				5BA94501243085B200DCD71C /* en-CA */,
 				5B04140F243085DF0099D696 /* it */,
+				8A6A15372440511800E815DC /* vi */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2734,6 +2745,7 @@
 				5B62ABE92430858F00721845 /* ca */,
 				5BA94502243085B200DCD71C /* en-CA */,
 				5B041411243085DF0099D696 /* it */,
+				8A6A15362440511700E815DC /* vi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2774,6 +2786,7 @@
 				5B62ABEC2430858F00721845 /* ca */,
 				5BA944FF243085B200DCD71C /* en-CA */,
 				5B041412243085DF0099D696 /* it */,
+				8A6A15352440511700E815DC /* vi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2814,6 +2827,7 @@
 				5B62ABE82430858F00721845 /* ca */,
 				5BA94500243085B200DCD71C /* en-CA */,
 				5B041410243085DF0099D696 /* it */,
+				8A6A15342440511500E815DC /* vi */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2822,6 +2836,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B1BB7A8722BAC820006CA068 /* Base */,
+				8A6A15312440511400E815DC /* vi */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -2863,6 +2878,7 @@
 				5B62ABED2430858F00721845 /* ca */,
 				5BA94503243085B200DCD71C /* en-CA */,
 				5B041413243085DF0099D696 /* it */,
+				8A6A15332440511500E815DC /* vi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2887,7 +2903,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6333T4PXQ;
+				DEVELOPMENT_TEAM = H4TGAX5QYV;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = GradesWidget/Info.plist;
@@ -2896,7 +2912,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas.GradesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student.GradesWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2921,7 +2937,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6333T4PXQ;
+				DEVELOPMENT_TEAM = H4TGAX5QYV;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = GradesWidget/Info.plist;
@@ -3057,7 +3073,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = B6333T4PXQ;
+				DEVELOPMENT_TEAM = H4TGAX5QYV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3069,7 +3085,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3088,7 +3104,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = B6333T4PXQ;
+				DEVELOPMENT_TEAM = H4TGAX5QYV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3100,7 +3116,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -3232,7 +3248,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6333T4PXQ;
+				DEVELOPMENT_TEAM = H4TGAX5QYV;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SubmitAssignment/Info.plist;
@@ -3243,7 +3259,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas.SubmitAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student.SubmitAssignments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -3263,7 +3279,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6333T4PXQ;
+				DEVELOPMENT_TEAM = H4TGAX5QYV;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SubmitAssignment/Info.plist;
@@ -3273,7 +3289,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas.SubmitAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student.SubmitAssignments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

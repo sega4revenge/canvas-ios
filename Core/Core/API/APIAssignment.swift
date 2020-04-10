@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/assignments.html#Assignment
+// https://lms.flexidata.vn/doc/api/assignments.html#Assignment
 public struct APIAssignment: Codable, Equatable {
     let id: ID
     let course_id: ID

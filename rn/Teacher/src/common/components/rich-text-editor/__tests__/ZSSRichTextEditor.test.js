@@ -152,7 +152,7 @@ describe('ZSSRichTextEditor', () => {
   })
 
   it('triggers insertImage', () => {
-    testTrigger((editor) => editor.insertImage('https://canvas.instructure.com/files/1/download'))
+    testTrigger((editor) => editor.insertImage('https://lms.flexidata.vn/files/1/download'))
   })
 
   it('triggers insertVideoComment', () => {
@@ -379,7 +379,7 @@ describe('ZSSRichTextEditor', () => {
         mime_class: 'image',
         url: 'https://verified-download-url.jpg',
       })
-      const fileURL = 'https://canvas.instructure.com/files/1/download'
+      const fileURL = 'https://lms.flexidata.vn/files/1/download'
       const getFile = jest.fn(() => Promise.resolve({ data: image }))
       Clipboard.getString = jest.fn(() => Promise.resolve(fileURL))
       const screen = shallow(<ZSSRichTextEditor getFile={getFile} />)
@@ -395,7 +395,7 @@ describe('ZSSRichTextEditor', () => {
         mime_class: 'file',
         url: 'https://verified-download-url.jpg',
       })
-      const fileURL = 'https://canvas.instructure.com/files/1/download'
+      const fileURL = 'https://lms.flexidata.vn/files/1/download'
       const getFile = jest.fn(() => Promise.resolve({ data: file }))
       Clipboard.getString = jest.fn(() => Promise.resolve(fileURL))
       const screen = shallow(<ZSSRichTextEditor getFile={getFile} />)
@@ -408,7 +408,7 @@ describe('ZSSRichTextEditor', () => {
 
     it('catches error and pastes clipboard if network call fails', () => {
       expect(async () => {
-        const fileURL = 'https://canvas.instructure.com/files/1/download'
+        const fileURL = 'https://lms.flexidata.vn/files/1/download'
         const getFile = jest.fn(() => Promise.reject('ERROR'))
         Clipboard.getString = jest.fn(() => Promise.resolve(fileURL))
         const screen = shallow(<ZSSRichTextEditor getFile={getFile} />)

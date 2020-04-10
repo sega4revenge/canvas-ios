@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/discussion_topics.html#method.discussion_topics.create
+// https://lms.flexidata.vn/doc/api/discussion_topics.html#method.discussion_topics.create
 struct PostDiscussionTopicRequest: APIRequestable {
     typealias Response = APIDiscussionTopic
     struct Body: Codable, Equatable {
@@ -36,8 +36,8 @@ struct PostDiscussionTopicRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/discussion_topics.html#method.discussion_topics_api.add_entry
-// https://canvas.instructure.com/doc/api/discussion_topics.html#method.discussion_topics_api.add_reply
+// https://lms.flexidata.vn/doc/api/discussion_topics.html#method.discussion_topics_api.add_entry
+// https://lms.flexidata.vn/doc/api/discussion_topics.html#method.discussion_topics_api.add_reply
 struct PostDiscussionEntryRequest: APIRequestable {
     typealias Response = APIDiscussionEntry
     struct Body: Codable, Equatable {
@@ -66,7 +66,7 @@ struct PostDiscussionEntryRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/discussion_topics.html#method.discussion_topics_api.entries
+// https://lms.flexidata.vn/doc/api/discussion_topics.html#method.discussion_topics_api.entries
 struct ListDiscussionEntriesRequest: APIRequestable {
     typealias Response = [APIDiscussionEntry]
     let context: Context
@@ -76,7 +76,7 @@ struct ListDiscussionEntriesRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/discussion_topics.html#method.discussion_topics_api.show
+// https://lms.flexidata.vn/doc/api/discussion_topics.html#method.discussion_topics_api.show
 struct GetTopicRequest: APIRequestable {
     typealias Response = APIDiscussionTopic
 
@@ -137,7 +137,7 @@ struct GetFullTopicRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/discussion_topics.html#method.discussion_topics.index
+// https://lms.flexidata.vn/doc/api/discussion_topics.html#method.discussion_topics.index
 struct ListDiscussionTopicsRequest: APIRequestable {
     typealias Response = [APIDiscussionTopic]
 

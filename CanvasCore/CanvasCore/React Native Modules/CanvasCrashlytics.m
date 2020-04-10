@@ -25,7 +25,7 @@
 @implementation CanvasCrashlytics
 @synthesize bridge = _bridge;
 
-NSString *const DefaultDomain = @"com.instructure.icanvas";
+NSString *const DefaultDomain = @"vn.flexidata.lms.canvas";
 NSInteger const DefaultCode = 999;
 
 RCT_EXPORT_MODULE();

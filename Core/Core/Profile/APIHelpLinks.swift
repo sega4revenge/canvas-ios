@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/accounts.html#HelpLinks
+// https://lms.flexidata.vn/doc/api/accounts.html#HelpLinks
 public struct APIHelpLinks: Codable {
     let help_link_name: String
     let help_link_icon: String
@@ -26,7 +26,7 @@ public struct APIHelpLinks: Codable {
     let custom_help_links: [APIHelpLink]
 }
 
-// https://canvas.instructure.com/doc/api/accounts.html#HelpLink
+// https://lms.flexidata.vn/doc/api/accounts.html#HelpLink
 public struct APIHelpLink: Codable {
     let id: String
     let text: String
@@ -98,7 +98,7 @@ extension APIHelpLink {
 }
 #endif
 
-// https://canvas.instructure.com/doc/api/accounts.html#method.accounts.help_links
+// https://lms.flexidata.vn/doc/api/accounts.html#method.accounts.help_links
 public struct GetAccountHelpLinksRequest: APIRequestable {
     public typealias Response = APIHelpLinks
     public let path = "accounts/self/help_links"

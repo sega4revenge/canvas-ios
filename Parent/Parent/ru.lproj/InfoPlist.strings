@@ -1,5 +1,5 @@
 /* Bundle display name */
-"CFBundleDisplayName" = "Canvas Parent";
+"CFBundleDisplayName" = "Phụ Huynh";
 
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Прикреплять фотографии и видеоматериалы к сообщениям и постам в дискуссии или преобразовывать как отправки заданий.";

@@ -34,7 +34,7 @@ class SyllabusSummaryViewControllerTests: CoreTestCase {
         let date = DateComponents(calendar: .current, timeZone: .current, year: 2020, month: 2, day: 12).date!
         let assignment = APICalendarEvent.make(
             id: "1",
-            html_url: URL(string: "https://canvas.instructure.com/assignments/1")!,
+            html_url: URL(string: "https://lms.flexidata.vn/assignments/1")!,
             title: "assignment",
             start_at: date,
             type: .assignment,

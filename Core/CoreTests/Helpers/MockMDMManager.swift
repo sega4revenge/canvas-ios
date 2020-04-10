@@ -26,7 +26,7 @@ extension MDMManager {
             "users": [[
                 "username": "apple",
                 "password": "titaniumium",
-                "host": "canvas.instructure.com",
+                "host": "lms.flexidata.vn",
             ], ],
         ]
         UserDefaults.standard.set(defaults, forKey: MDMManager.MDMUserDefaultsKey)
@@ -49,11 +49,11 @@ extension MDMManager {
                 ],
                 [
                     "username": "apple",
-                    "host": "canvas.instructure.com",
+                    "host": "lms.flexidata.vn",
                 ],
                 [
                     "password": "titaniumium",
-                    "host": "canvas.instructure.com",
+                    "host": "lms.flexidata.vn",
                 ],
             ],
         ]
@@ -63,7 +63,7 @@ extension MDMManager {
     static func mockHost() {
         let defaults: [String: Any] = [
             "enableLogin": true,
-            "host": "canvas.instructure.com",
+            "host": "lms.flexidata.vn",
             "authenticationProvider": "canvas",
         ]
         UserDefaults.standard.set(defaults, forKey: MDMManager.MDMUserDefaultsKey)

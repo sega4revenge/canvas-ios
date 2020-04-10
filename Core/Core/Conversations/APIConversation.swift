@@ -26,7 +26,7 @@ public enum ConversationProperties: String, Codable {
     case last_author, attachments, media_objects
 }
 
-// https://canvas.instructure.com/doc/api/conversations.html#Conversation
+// https://lms.flexidata.vn/doc/api/conversations.html#Conversation
 public struct APIConversation: Codable, Equatable {
     public let id: ID
     let subject: String?
@@ -49,7 +49,7 @@ public struct APIConversation: Codable, Equatable {
     let messages: [APIConversationMessage]?
 }
 
-// https://canvas.instructure.com/doc/api/conversations.html#ConversationParticipant
+// https://lms.flexidata.vn/doc/api/conversations.html#ConversationParticipant
 public struct APIConversationParticipant: Codable, Equatable {
     let id: ID
     let name: String

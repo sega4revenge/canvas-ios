@@ -49,7 +49,7 @@ struct APIExternalToolLaunchPlacement: Codable, Equatable {
 extension APIGetSessionlessLaunchResponse {
     static func make(
         name: String? = nil,
-        url: URL = URL(string: "https://canvas.instructure.com")!
+        url: URL = URL(string: "https://lms.flexidata.vn")!
     ) -> APIGetSessionlessLaunchResponse {
         APIGetSessionlessLaunchResponse(name: name, url: url)
     }

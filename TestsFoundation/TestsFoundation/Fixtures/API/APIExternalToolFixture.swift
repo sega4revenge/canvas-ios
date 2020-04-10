@@ -24,7 +24,7 @@ extension APIExternalTool {
         id: ID = "1",
         name: String = "External 1",
         domain: String? = nil,
-        url: URL = URL(string: "canvas.instructure.com/external_tools/1")!
+        url: URL = URL(string: "lms.flexidata.vn/external_tools/1")!
     ) -> APIExternalTool {
         return APIExternalTool(
             id: id,

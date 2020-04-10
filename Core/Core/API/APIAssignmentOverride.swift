@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/assignments.html#AssignmentOverride
+// https://lms.flexidata.vn/doc/api/assignments.html#AssignmentOverride
 public struct APIAssignmentOverride: Codable, Equatable {
     let id: ID
     let assignment_id: ID

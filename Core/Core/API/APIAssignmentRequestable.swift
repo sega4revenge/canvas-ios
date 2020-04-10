@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/assignments.html#method.assignments_api.show
+// https://lms.flexidata.vn/doc/api/assignments.html#method.assignments_api.show
 public struct GetAssignmentRequest: APIRequestable {
     public typealias Response = APIAssignment
 
@@ -68,7 +68,7 @@ struct APIAssignmentParameters: Codable, Equatable {
     let unlock_at: Date?
 }
 
-// https://canvas.instructure.com/doc/api/assignments.html#method.assignments_api.create
+// https://lms.flexidata.vn/doc/api/assignments.html#method.assignments_api.create
 struct PostAssignmentRequest: APIRequestable {
     typealias Response = APIAssignment
     struct Body: Codable, Equatable {
@@ -85,7 +85,7 @@ struct PostAssignmentRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/assignments.html#method.assignments_api.index
+// https://lms.flexidata.vn/doc/api/assignments.html#method.assignments_api.index
 public struct GetAssignmentsRequest: APIRequestable {
     public enum OrderBy: String {
         case position, name

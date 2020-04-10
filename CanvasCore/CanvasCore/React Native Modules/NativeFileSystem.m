@@ -34,7 +34,7 @@ RCT_EXPORT_MODULE();
 }
 
 RCT_REMAP_METHOD(pathForResource, named:(NSString *)name ofType:(NSString *)type resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
-    NSString *path = [[NSBundle bundleWithIdentifier:@"com.instructure.CanvasCore"] pathForResource:name ofType:type];
+    NSString *path = [[NSBundle bundleWithIdentifier:@"vn.flexidata.lms.CanvasCore"] pathForResource:name ofType:type];
     resolve(path);
 }
 

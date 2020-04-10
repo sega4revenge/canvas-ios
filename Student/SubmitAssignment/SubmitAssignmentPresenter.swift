@@ -27,7 +27,7 @@ class SubmitAssignmentPresenter {
     let env: AppEnvironment = .shared
     let sharedContainer: URL
     var uploadManager = UploadManager(
-        identifier: "com.instructure.icanvas.SubmitAssignment.file-uploads",
+        identifier: "vn.flexidata.lms.canvas.SubmitAssignment.file-uploads",
         sharedContainerIdentifier: "group.instructure.shared"
     )
     weak var view: SubmitAssignmentView?

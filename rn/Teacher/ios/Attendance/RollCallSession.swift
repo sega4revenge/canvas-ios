@@ -21,7 +21,7 @@ import WebKit
 import Core
 
 func attendanceError(message: String, code: Int = 0) -> Error {
-    return NSError(domain: "com.instructure.rollcall", code: code, userInfo: [
+    return NSError(domain: "vn.flexidata.lms.rollcall", code: code, userInfo: [
         NSLocalizedDescriptionKey: message,
     ])
 }
@@ -172,7 +172,7 @@ class RollCallSession: NSObject, WKNavigationDelegate {
 
         session.dataTask(with: request) { (data, _, error) in
             guard let data = data else {
-                let error = NSError(domain: "com.instructure.rollcall", code: 1, userInfo: [
+                let error = NSError(domain: "vn.flexidata.lms.rollcall", code: 1, userInfo: [
                     NSLocalizedDescriptionKey: NSLocalizedString("Error: No data returned from the rollcall api.", comment: "rollcall status error"),
                 ])
                 return completed(nil, error)

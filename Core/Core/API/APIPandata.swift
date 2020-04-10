@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/users.html#method.users.pandata_events_token
+// https://lms.flexidata.vn/doc/api/users.html#method.users.pandata_events_token
 public struct APIPandataEventsToken: Codable, Equatable {
     public let url: URL
     public let auth_token: String
@@ -94,7 +94,7 @@ public struct APIPandataEventProperties: Codable, Equatable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/users.html#method.users.pandata_events_token
+// https://lms.flexidata.vn/doc/api/users.html#method.users.pandata_events_token
 public struct PostPandataEventsTokenRequest: APIRequestable {
     public typealias Response = APIPandataEventsToken
     public struct Body: Codable {

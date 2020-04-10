@@ -23,7 +23,7 @@ import TestsFoundation
 
 class GetBrandVariablesTest: CoreTestCase {
     func testItUpdatesBrandVariables() {
-        let response = HTTPURLResponse(url: URL(string: "https://canvas.instructure.com/brand_variables")!, statusCode: 200, httpVersion: nil, headerFields: nil)
+        let response = HTTPURLResponse(url: URL(string: "https://lms.flexidata.vn/brand_variables")!, statusCode: 200, httpVersion: nil, headerFields: nil)
         let prev = Brand.shared
         GetBrandVariables().write(response: nil, urlResponse: response, to: databaseClient)
         XCTAssertEqual(Brand.shared, prev)

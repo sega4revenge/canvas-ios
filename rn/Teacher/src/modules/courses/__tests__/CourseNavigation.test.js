@@ -148,7 +148,7 @@ describe('CourseNavigation', () => {
 
   describe('lti launch', () => {
     function assertLTILaunch () {
-      let url = 'https://canvas.instructure.com/courses/1/sessionless_launch?url=blah'
+      let url = 'https://lms.flexidata.vn/courses/1/sessionless_launch?url=blah'
       const tab = template.tab({
         id: 'external_tool_4',
         type: 'external',
@@ -339,7 +339,7 @@ describe('CourseNavigation', () => {
   it('navigates to conferences', () => {
     const tab = template.tab({
       id: 'conferences',
-      full_url: 'https://canvas.instructure.com/courses/1/conferences',
+      full_url: 'https://lms.flexidata.vn/courses/1/conferences',
     })
     const props = {
       ...defaultProps,
@@ -361,7 +361,7 @@ describe('CourseNavigation', () => {
   it('shows collaborations in a web view', () => {
     const tab = template.tab({
       id: 'collaborations',
-      full_url: 'https://canvas.instructure.com/courses/1/collaborations',
+      full_url: 'https://lms.flexidata.vn/courses/1/collaborations',
     })
     const props = {
       ...defaultProps,
@@ -383,7 +383,7 @@ describe('CourseNavigation', () => {
   it('shows outcomes', () => {
     const tab = template.tab({
       id: 'outcomes',
-      full_url: 'https://canvas.instructure.com/courses/1/outcomes',
+      full_url: 'https://lms.flexidata.vn/courses/1/outcomes',
     })
     const props = {
       ...defaultProps,

@@ -22,7 +22,7 @@ import XCTest
 class KeychainTests: XCTestCase {
 
     let serviceName = "com.test"
-    let accessGroup = "com.instructure.test"
+    let accessGroup = "vn.flexidata.lms.test"
     var keychain: Keychain!
     override func setUp() {
         super.setUp()

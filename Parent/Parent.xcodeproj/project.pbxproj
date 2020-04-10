@@ -854,6 +854,22 @@
 		7DFDB43123A3EDFB00B28DED /* ConversationListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewControllerTests.swift; sourceTree = "<group>"; };
 		7DFDB43323A4393D00B28DED /* ConversationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListCell.swift; sourceTree = "<group>"; };
 		837B3D69221692A813A08E1E /* Pods-defaults-ParentUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ParentUnitTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-defaults-ParentUnitTests/Pods-defaults-ParentUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A6A1538244054BE00E815DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A6A15392440554300E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/CourseCell.strings; sourceTree = "<group>"; };
+		8A6A153A2440554300E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AlertCell.strings; sourceTree = "<group>"; };
+		8A6A153B2440554400E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/DashboardViewController.strings; sourceTree = "<group>"; };
+		8A6A153C2440554500E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/DetailsInfoCell.strings; sourceTree = "<group>"; };
+		8A6A153D2440554600E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/DetailsReminderCell.strings; sourceTree = "<group>"; };
+		8A6A153E2440554600E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/DetailsDateCell.strings; sourceTree = "<group>"; };
+		8A6A153F2440554700E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/DetailsLocationCell.strings; sourceTree = "<group>"; };
+		8A6A15402440554700E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/DetailsAttachmentCell.strings; sourceTree = "<group>"; };
+		8A6A15412440554800E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8A6A15422440554900E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/SettingsObserveeCell.strings; sourceTree = "<group>"; };
+		8A6A15432440554900E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/SettingsViewController.strings; sourceTree = "<group>"; };
+		8A6A15442440554A00E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/UserCell.strings; sourceTree = "<group>"; };
+		8A6A15452440554A00E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/StudentSettingsHeaderView.strings; sourceTree = "<group>"; };
+		8A6A15462440554A00E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A6A15472440554B00E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		90AFEB4A273EE752196BC769 /* Pods-Parent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parent.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Parent/Pods-Parent.debug.xcconfig"; sourceTree = "<group>"; };
 		90C9F9DE9C41E49B6739CC26 /* Pods_defaults_common_tests_ParentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_common_tests_ParentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97043EDE23E8D4D400E52436 /* DashboardViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewControllerTests.swift; sourceTree = "<group>"; };
@@ -1594,7 +1610,6 @@
 					};
 					5E6441861C3EE2E0003D7397 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = B6333T4PXQ;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1658,6 +1673,7 @@
 				"en-CA",
 				ca,
 				it,
+				vi,
 			);
 			mainGroup = 5E64417E1C3EE2E0003D7397;
 			productRefGroup = 5E6441881C3EE2E0003D7397 /* Products */;
@@ -2042,6 +2058,7 @@
 				5B6A931E242746BE0062CC54 /* en-CA */,
 				5BBD136D243080DE00019BB7 /* ca */,
 				5B3F70CE243083280088EF27 /* it */,
+				8A6A15472440554B00E815DC /* vi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2083,6 +2100,7 @@
 				5B6A9329242746BE0062CC54 /* en-CA */,
 				5BBD1378243080DE00019BB7 /* ca */,
 				5B3F70D9243083280088EF27 /* it */,
+				8A6A15392440554300E815DC /* vi */,
 			);
 			name = CourseCell.xib;
 			sourceTree = "<group>";
@@ -2124,6 +2142,7 @@
 				5B6A931F242746BE0062CC54 /* en-CA */,
 				5BBD136E243080DE00019BB7 /* ca */,
 				5B3F70CF243083280088EF27 /* it */,
+				8A6A153A2440554300E815DC /* vi */,
 			);
 			name = AlertCell.xib;
 			sourceTree = "<group>";
@@ -2165,6 +2184,7 @@
 				5B6A9321242746BE0062CC54 /* en-CA */,
 				5BBD1370243080DE00019BB7 /* ca */,
 				5B3F70D1243083280088EF27 /* it */,
+				8A6A153C2440554500E815DC /* vi */,
 			);
 			name = DetailsInfoCell.xib;
 			sourceTree = "<group>";
@@ -2206,6 +2226,7 @@
 				5B6A9326242746BE0062CC54 /* en-CA */,
 				5BBD1375243080DE00019BB7 /* ca */,
 				5B3F70D6243083280088EF27 /* it */,
+				8A6A153D2440554600E815DC /* vi */,
 			);
 			name = DetailsReminderCell.xib;
 			sourceTree = "<group>";
@@ -2247,6 +2268,7 @@
 				5B6A9325242746BE0062CC54 /* en-CA */,
 				5BBD1374243080DE00019BB7 /* ca */,
 				5B3F70D5243083280088EF27 /* it */,
+				8A6A153E2440554600E815DC /* vi */,
 			);
 			name = DetailsDateCell.xib;
 			sourceTree = "<group>";
@@ -2288,6 +2310,7 @@
 				5B6A9320242746BE0062CC54 /* en-CA */,
 				5BBD136F243080DE00019BB7 /* ca */,
 				5B3F70D0243083280088EF27 /* it */,
+				8A6A153F2440554700E815DC /* vi */,
 			);
 			name = DetailsLocationCell.xib;
 			sourceTree = "<group>";
@@ -2329,6 +2352,7 @@
 				5B6A9324242746BE0062CC54 /* en-CA */,
 				5BBD1373243080DE00019BB7 /* ca */,
 				5B3F70D4243083280088EF27 /* it */,
+				8A6A15422440554900E815DC /* vi */,
 			);
 			name = SettingsObserveeCell.xib;
 			sourceTree = "<group>";
@@ -2370,6 +2394,7 @@
 				5B6A9328242746BE0062CC54 /* en-CA */,
 				5BBD1377243080DE00019BB7 /* ca */,
 				5B3F70D8243083280088EF27 /* it */,
+				8A6A15442440554A00E815DC /* vi */,
 			);
 			name = UserCell.xib;
 			sourceTree = "<group>";
@@ -2411,6 +2436,7 @@
 				5B6A932A242746BE0062CC54 /* en-CA */,
 				5BBD1379243080DE00019BB7 /* ca */,
 				5B3F70DA243083280088EF27 /* it */,
+				8A6A15452440554A00E815DC /* vi */,
 			);
 			name = StudentSettingsHeaderView.xib;
 			sourceTree = "<group>";
@@ -2444,6 +2470,7 @@
 				7D349CA321430DE8004C1074 /* en-GB-instukhe */,
 				7D349CBB21430E27004C1074 /* nb-instk12 */,
 				7D349CD321430E64004C1074 /* sv-instk12 */,
+				8A6A15432440554900E815DC /* vi */,
 			);
 			name = SettingsViewController.storyboard;
 			sourceTree = "<group>";
@@ -2485,6 +2512,7 @@
 				5B6A9327242746BE0062CC54 /* en-CA */,
 				5BBD1376243080DE00019BB7 /* ca */,
 				5B3F70D7243083280088EF27 /* it */,
+				8A6A153B2440554400E815DC /* vi */,
 			);
 			name = DashboardViewController.storyboard;
 			sourceTree = "<group>";
@@ -2526,6 +2554,7 @@
 				5B6A9322242746BE0062CC54 /* en-CA */,
 				5BBD1371243080DE00019BB7 /* ca */,
 				5B3F70D2243083280088EF27 /* it */,
+				8A6A15402440554700E815DC /* vi */,
 			);
 			name = DetailsAttachmentCell.xib;
 			sourceTree = "<group>";
@@ -2567,6 +2596,8 @@
 				5B6A931D242746BE0062CC54 /* en-CA */,
 				5BBD136C243080DE00019BB7 /* ca */,
 				5B3F70CD243083280088EF27 /* it */,
+				8A6A1538244054BE00E815DC /* en */,
+				8A6A15462440554A00E815DC /* vi */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2600,6 +2631,7 @@
 				7D349CA721430DE9004C1074 /* en-GB-instukhe */,
 				7D349CBF21430E29004C1074 /* nb-instk12 */,
 				7D349CD721430E66004C1074 /* sv-instk12 */,
+				8A6A15412440554800E815DC /* vi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2786,7 +2818,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2012;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = B6333T4PXQ;
+				DEVELOPMENT_TEAM = H4TGAX5QYV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2800,7 +2832,7 @@
 				);
 				MARKETING_VERSION = 0.0.1;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.parentapp;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.parent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2834,7 +2866,7 @@
 				);
 				MARKETING_VERSION = 0.0.1;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.parentapp;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.parent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

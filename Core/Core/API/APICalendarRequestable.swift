@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/all_resources.html#method.calendar_events_api.index
+// https://lms.flexidata.vn/doc/api/all_resources.html#method.calendar_events_api.index
 public struct GetCalendarEventsRequest: APIRequestable {
     public typealias Response = [APICalendarEvent]
     public enum Include: String {

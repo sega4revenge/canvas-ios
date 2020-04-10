@@ -56,7 +56,7 @@ public class CacheManager {
     public static func clear() {
         URLCache.shared.removeAllCachedResponses()
         clearAppGroup(Bundle.main.appGroupID())
-        clearAppGroup("group.com.instructure.Contexts") // LocalStoreAppGroupName
+        clearAppGroup("group.vn.flexidata.lms.Contexts") // LocalStoreAppGroupName
         clearCaches()
         clearLibrary()
         clearRNAsyncStorage()

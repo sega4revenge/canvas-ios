@@ -395,7 +395,7 @@ describe('SubmissionViewer', () => {
       ...defaultSub,
       submission: templates.submissionHistory([{
         submission_type: 'online_quiz',
-        preview_url: 'https://canvas.instructure.com/courses/1/quizzes/2/preview',
+        preview_url: 'https://lms.flexidata.vn/courses/1/quizzes/2/preview',
       }]),
     }
     let props = {

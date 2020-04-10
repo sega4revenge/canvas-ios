@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/submissions.html#Submission
+// https://lms.flexidata.vn/doc/api/submissions.html#Submission
 public struct APISubmission: Codable, Equatable {
     let id: ID
     let assignment_id: ID
@@ -61,7 +61,7 @@ public struct APISubmissionUser: Codable, Equatable {
     let pronouns: String?
 }
 
-// https://canvas.instructure.com/doc/api/submissions.html#SubmissionComment
+// https://lms.flexidata.vn/doc/api/submissions.html#SubmissionComment
 public struct APISubmissionComment: Codable, Equatable {
     let id: String
     let author_id: String

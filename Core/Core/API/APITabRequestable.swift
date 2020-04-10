@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/tabs.html#method.tabs.index
+// https://lms.flexidata.vn/doc/api/tabs.html#method.tabs.index
 public struct GetTabsRequest: APIRequestable {
     public typealias Response = [APITab]
 

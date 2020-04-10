@@ -23,19 +23,19 @@ private class Placeholder {}
 public extension Bundle {
     @objc static let core = Bundle(for: Placeholder.self)
 
-    static let studentBundleID = "com.instructure.icanvas"
-    static let teacherBundleID = "com.instructure.ios.teacher"
-    static let parentBundleID = "com.instructure.parentapp"
+    static let studentBundleID = "vn.flexidata.lms.student"
+    static let teacherBundleID = "vn.flexidata.lms.teacher"
+    static let parentBundleID = "vn.flexidata.lms.parent"
 
-    static let coreBundleID = "com.instructure.core"
+    static let coreBundleID = "vn.flexidata.lms.core"
 
-    static let studentUITestsBundleID = "com.instructure.StudentUITests.xctrunner"
-    static let teacherUITestsBundleID = "com.instructure.TeacherUITests.xctrunner"
-    static let parentUITestsBundleID = "com.instructure.ParentUITests.xctrunner"
+    static let studentUITestsBundleID = "vn.flexidata.lms.StudentUITests.xctrunner"
+    static let teacherUITestsBundleID = "vn.flexidata.lms.TeacherUITests.xctrunner"
+    static let parentUITestsBundleID = "vn.flexidata.lms.ParentUITests.xctrunner"
 
-    static let studentE2ETestsBundleID = "com.instructure.StudentE2ETests.xctrunner"
-    static let teacherE2ETestsBundleID = "com.instructure.TeacherE2ETests.xctrunner"
-    static let parentE2ETestsBundleID = "com.instructure.ParentE2ETests.xctrunner"
+    static let studentE2ETestsBundleID = "vn.flexidata.lms.StudentE2ETests.xctrunner"
+    static let teacherE2ETestsBundleID = "vn.flexidata.lms.TeacherE2ETests.xctrunner"
+    static let parentE2ETestsBundleID = "vn.flexidata.lms.ParentE2ETests.xctrunner"
 
     func appGroupID(bundleID: String? = nil) -> String? {
         if (bundleID ?? bundleIdentifier)?.hasPrefix(Bundle.studentBundleID) == true {

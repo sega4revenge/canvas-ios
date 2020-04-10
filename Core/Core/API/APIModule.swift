@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/modules.html#Module
+// https://lms.flexidata.vn/doc/api/modules.html#Module
 public struct APIModule: Codable, Equatable {
     public let id: ID
     public let name: String
@@ -30,7 +30,7 @@ public struct APIModule: Codable, Equatable {
     public var items: [APIModuleItem]?
 }
 
-// https://canvas.instructure.com/doc/api/modules.html#ModuleItem
+// https://lms.flexidata.vn/doc/api/modules.html#ModuleItem
 public struct APIModuleItem: Codable, Equatable {
     public struct ContentDetails: Codable, Equatable {
         public let due_at: Date?
@@ -148,7 +148,7 @@ enum APIModuleItemType: String, Codable {
     case externalTool = "ExternalTool"
 }
 
-// https://canvas.instructure.com/doc/api/modules.html#ModuleItemSequence
+// https://lms.flexidata.vn/doc/api/modules.html#ModuleItemSequence
 public struct APIModuleItemSequence: Codable, Equatable {
     public struct Node: Codable, Equatable {
         let prev: APIModuleItem?

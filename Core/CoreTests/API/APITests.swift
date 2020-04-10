@@ -108,7 +108,7 @@ class APITests: XCTestCase {
         let expected = URL(string: "https://foo.com")!
         XCTAssertEqual(URLSessionAPI(session: LoginSession.make(baseURL: expected)).baseURL, expected)
         XCTAssertEqual(URLSessionAPI(loginSession: LoginSession.make(baseURL: URL(string: "https://bar.com")!), baseURL: expected).baseURL, expected)
-        XCTAssertEqual(URLSessionAPI(loginSession: nil, baseURL: nil).baseURL, URL(string: "https://canvas.instructure.com/")!)
+        XCTAssertEqual(URLSessionAPI(loginSession: nil, baseURL: nil).baseURL, URL(string: "https://lms.flexidata.vn/")!)
     }
 
     func testMakeRequestInvalidPath() {
@@ -251,7 +251,7 @@ class APITests: XCTestCase {
         )
         AppEnvironment.shared.currentSession = session
         api.loginSession = session
-        let url = URL(string: "https://canvas.instructure.com/api/v1/courses")!
+        let url = URL(string: "https://lms.flexidata.vn/api/v1/courses")!
         let request = URLRequest(url: url)
         let response = HTTPURLResponse(url: url, statusCode: 401, httpVersion: nil, headerFields: nil)
         MockURLSession.mock(
@@ -293,13 +293,13 @@ class APITests: XCTestCase {
         )
         let session = LoginSession.make(
             accessToken: "expired-token",
-            baseURL: URL(string: "https://canvas.instructure.com")!,
+            baseURL: URL(string: "https://lms.flexidata.vn")!,
             refreshToken: "refresh-token",
             clientID: "client-id",
             clientSecret: "client-secret"
         )
         api.loginSession = session
-        let url = URL(string: "https://canvas.instructure.com/api/v1/courses")!
+        let url = URL(string: "https://lms.flexidata.vn/api/v1/courses")!
         let request = URLRequest(url: url)
         let response = HTTPURLResponse(url: url, statusCode: 401, httpVersion: nil, headerFields: nil)
         MockURLSession.mock(
@@ -339,7 +339,7 @@ class APITests: XCTestCase {
             clientSecret: "client-secret"
         )
         api.loginSession = session
-        let url = URL(string: "https://canvas.instructure.com/api/v1/courses")!
+        let url = URL(string: "https://lms.flexidata.vn/api/v1/courses")!
         let request = URLRequest(url: url)
         let response = HTTPURLResponse(url: url, statusCode: 401, httpVersion: nil, headerFields: nil)
         MockURLSession.mock(

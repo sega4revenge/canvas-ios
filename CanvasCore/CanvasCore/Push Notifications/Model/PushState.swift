@@ -21,7 +21,7 @@ public enum PushPreAuthStatus: Int {
     case shownAndAccepted
     case shownAndDeclined
     
-    fileprivate static let pushPreAuthStatusKey = "com.instructure.canvas.pushPreAuthStatusKey"
+    fileprivate static let pushPreAuthStatusKey = "vn.flexidata.lms.canvas.pushPreAuthStatusKey"
     
     public static func currentPushPreAuthStatus() -> PushPreAuthStatus {
         let defaults = UserDefaults.standard

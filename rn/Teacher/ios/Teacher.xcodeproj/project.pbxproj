@@ -356,6 +356,11 @@
 		7D64A98423689DD4004EAEDF /* DatePickerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewControllerTests.swift; sourceTree = "<group>"; };
 		7D64A9862368C6C0004EAEDF /* AttendanceViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewControllerTests.swift; sourceTree = "<group>"; };
 		862F1400F211EDA7FFBD70FA /* Pods_defaults_TeacherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_TeacherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A6A1548244056EF00E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = Teacher/vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8A6A1549244056EF00E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A6A154A244056EF00E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = Teacher/vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8A6A154B244056F000E815DC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = vi; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		8A6A154C2440571000E815DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9210A7D2CE7CB864C8337310 /* Pods-defaults-Teacher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Teacher.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-defaults-Teacher/Pods-defaults-Teacher.release.xcconfig"; sourceTree = "<group>"; };
 		B15CA23F221DBA940014FB02 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Routes.swift; path = Teacher/Routes.swift; sourceTree = "<group>"; };
 		B15CA25D221DDB820014FB02 /* TeacherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeacherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -768,7 +773,6 @@
 				ORGANIZATIONNAME = Instructure;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = B6333T4PXQ;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -836,6 +840,7 @@
 				"en-CA",
 				ca,
 				it,
+				vi,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
@@ -1163,6 +1168,8 @@
 				5B7D063E2430853300E655CE /* ca */,
 				5BA7690A2430854600A6F9D2 /* en-CA */,
 				5BDE09B22430855E007EA704 /* it */,
+				8A6A1549244056EF00E815DC /* vi */,
+				8A6A154C2440571000E815DC /* en */,
 			);
 			name = InfoPlist.strings;
 			path = Teacher;
@@ -1197,6 +1204,7 @@
 				7D349D1121430F7A004C1074 /* en-GB-instukhe */,
 				7D349D1421430F93004C1074 /* nb-instk12 */,
 				7D349D1721430FA9004C1074 /* sv-instk12 */,
+				8A6A1548244056EF00E815DC /* vi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1238,6 +1246,7 @@
 				5B0F3DB4242749FA0032CEF0 /* en-CA */,
 				5B7D063F2430853300E655CE /* ca */,
 				5BDE09B42430855E007EA704 /* it */,
+				8A6A154A244056EF00E815DC /* vi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1277,6 +1286,7 @@
 				5B26A32324308580008A1786 /* sv */,
 				5B2C672D24308583001B37CE /* zh-HK */,
 				5B32899E2430858500CC2D57 /* zh */,
+				8A6A154B244056F000E815DC /* vi */,
 			);
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
@@ -1295,7 +1305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = B6333T4PXQ;
+				DEVELOPMENT_TEAM = H4TGAX5QYV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1337,7 +1347,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"DEBUG\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.ios.teacher;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.teacher;
 				PRODUCT_NAME = Teacher;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1358,7 +1368,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B6333T4PXQ;
+				DEVELOPMENT_TEAM = H4TGAX5QYV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1400,7 +1410,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.ios.teacher;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.teacher;
 				PRODUCT_NAME = Teacher;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Teacher/bridging-header.h";

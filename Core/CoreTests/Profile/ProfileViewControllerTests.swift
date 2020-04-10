@@ -194,7 +194,7 @@ class ProfileViewControllerTests: CoreTestCase, LoginDelegate {
     }
 
     func testStopActing() {
-        currentSession = LoginSession.make(masquerader: URL(string: "https://canvas.instructure.com/users/5"))
+        currentSession = LoginSession.make(masquerader: URL(string: "https://lms.flexidata.vn/users/5"))
         environment.currentSession = currentSession
         login.session = currentSession
         controller.view.layoutIfNeeded()
@@ -232,7 +232,7 @@ class ProfileViewControllerTests: CoreTestCase, LoginDelegate {
     }
 
     func testLTI() {
-        let sessionless = URL(string: "https://canvas.instructure.com/sessionless")!
+        let sessionless = URL(string: "https://lms.flexidata.vn/sessionless")!
         api.mock(controller.tools, value: [
             APIExternalToolLaunch(definition_id: "1", domain: "arc.instructure.com", placements: [
                 "global_navigation": APIExternalToolLaunchPlacement(title: "Studio", url: URL(string: "/")!),

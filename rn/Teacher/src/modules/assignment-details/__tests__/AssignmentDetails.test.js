@@ -180,7 +180,7 @@ describe('external tool', () => {
       LTITools.launchExternalTool = jest.fn()
     })
 
-    const url = 'https://canvas.instructure.com/external_tool'
+    const url = 'https://lms.flexidata.vn/external_tool'
     const props = {
       ...defaultProps,
       assignmentDetails: template.assignment({

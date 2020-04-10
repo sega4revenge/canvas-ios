@@ -22,8 +22,8 @@ class PageViewSession {
     var creationDate: Date?
     var ID: String = ""
     var sessionLengthInMinutes: Int = 30
-    static let sessionCreationDateKey = "com.instructure.pageview.session.creationDate"
-    static let UUIDKey = "com.instructure.pageview.session.UUID"
+    static let sessionCreationDateKey = "vn.flexidata.lms.pageview.session.creationDate"
+    static let UUIDKey = "vn.flexidata.lms.pageview.session.UUID"
 
     init(defaultSessionLength: Int = 30) {
         sessionLengthInMinutes = defaultSessionLength

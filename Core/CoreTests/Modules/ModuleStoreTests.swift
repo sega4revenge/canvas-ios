@@ -52,7 +52,7 @@ class ModuleStoreTests: CoreTestCase {
         let expectation = XCTestExpectation(description: "first page")
         expectation.expectedFulfillmentCount = 3
         onChange = expectation.fulfill
-        let link = "https://canvas.instructure.com/courses/1/modules?page=2"
+        let link = "https://lms.flexidata.vn/courses/1/modules?page=2"
         let response = HTTPURLResponse(next: link)
         let request = GetModulesRequest(courseID: "1", include: [.items, .content_details])
         api.mock(request, value: [.make(id: "1", position: 1, items: [])], response: response)
@@ -95,7 +95,7 @@ class ModuleStoreTests: CoreTestCase {
         expectation.expectedFulfillmentCount = 3
         onChange = expectation.fulfill
         api.mock(GetModulesRequest(courseID: "1", include: [.items, .content_details]), value: [.make(id: "1", items: nil)])
-        let link = "https://canvas.instructure.com/api/v1/courses/1/modules/1/items?page=2"
+        let link = "https://lms.flexidata.vn/api/v1/courses/1/modules/1/items?page=2"
         let response = HTTPURLResponse(next: link)
         let request = GetModuleItemsRequest(courseID: "1", moduleID: "1", include: [.content_details])
         api.mock(request, value: [.make(id: "1")], response: response)

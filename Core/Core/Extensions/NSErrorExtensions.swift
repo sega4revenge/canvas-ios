@@ -20,7 +20,7 @@ import Foundation
 
 extension NSError {
     public struct Constants {
-        static let domain = "com.instructure"
+        static let domain = "vn.flexidata.lms"
         static let internalError = "Internal Error"
     }
 

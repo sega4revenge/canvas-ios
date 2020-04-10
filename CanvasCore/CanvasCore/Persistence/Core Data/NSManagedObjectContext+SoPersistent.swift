@@ -56,7 +56,7 @@ extension NSPersistentStoreCoordinator {
     }
 }
 
-let pendingMergesQueue = DispatchQueue(label: "com.instructure.PendingCoreDataMerges")
+let pendingMergesQueue = DispatchQueue(label: "vn.flexidata.lms.PendingCoreDataMerges")
 
 extension NSManagedObjectContext {
     

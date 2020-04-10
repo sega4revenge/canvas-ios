@@ -22,9 +22,9 @@ import Foundation
 extension APITodo {
     public static func make(
         type: TodoType = .submitting,
-        ignore: URL = URL(string: "https://canvas.instructure.com/api/v1/users/self/todo_ignore/1")!,
-        ignore_permanently: URL = URL(string: "https://canvas.instructure.com/api/v1/users/self/todo_ignore/1")!,
-        html_url: URL = URL(string: "https://canvas.instructure.com/api/v1/courses/1/assignments/1")!,
+        ignore: URL = URL(string: "https://lms.flexidata.vn/api/v1/users/self/todo_ignore/1")!,
+        ignore_permanently: URL = URL(string: "https://lms.flexidata.vn/api/v1/users/self/todo_ignore/1")!,
+        html_url: URL = URL(string: "https://lms.flexidata.vn/api/v1/courses/1/assignments/1")!,
         needs_grading_count: UInt? = nil,
         assignment: APIAssignment = .make(),
         context_type: String = "Course",

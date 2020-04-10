@@ -24,6 +24,6 @@ class UIViewControllerExtensionsTests: XCTestCase {
         XCTAssertNotNil(UIViewController() as ApplicationViewController)
     }
     func testOpen() {
-        XCTAssertNoThrow(UIViewController().open(URL(string: "https://canvas.instructure.com/")!))
+        XCTAssertNoThrow(UIViewController().open(URL(string: "https://lms.flexidata.vn/")!))
     }
 }

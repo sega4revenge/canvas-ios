@@ -21,6 +21,6 @@ import Foundation
 
 extension NSError {
     @objc class func quizErrorWithMessage(_ message: String) -> NSError {
-        return NSError(domain: "com.instructure.quizkit", code: 0, userInfo: [NSLocalizedDescriptionKey: message])
+        return NSError(domain: "vn.flexidata.lms.quizkit", code: 0, userInfo: [NSLocalizedDescriptionKey: message])
     }
 }

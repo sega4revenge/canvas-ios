@@ -77,7 +77,7 @@ describe('CanvasWebView', () => {
     const navigator = template.navigator({ show: jest.fn() })
     const tree = shallow(<CanvasWebView {...props} navigator={navigator} />)
     const webView = tree.find('WebView')
-    const url = 'https://canvas.instructure.com/courses/1/assignments/1'
+    const url = 'https://lms.flexidata.vn/courses/1/assignments/1'
     webView.simulate('Navigation', { nativeEvent: { url } })
     expect(navigator.show).toHaveBeenCalledWith(url, {
       deepLink: true,
@@ -88,7 +88,7 @@ describe('CanvasWebView', () => {
     const navigator = template.navigator({ show: jest.fn() })
     const tree = shallow(<CanvasWebView {...props} navigator={navigator} openLinksInSafari />)
     const webView = tree.find('WebView')
-    const url = 'https://canvas.instructure.com/courses/1/assignments/1'
+    const url = 'https://lms.flexidata.vn/courses/1/assignments/1'
     webView.simulate('Navigation', { nativeEvent: { url } })
     expect(navigator.showWebView).toHaveBeenCalledWith(url)
   })
@@ -98,7 +98,7 @@ describe('CanvasWebView', () => {
     const onNavigation = jest.fn()
     const tree = shallow(<CanvasWebView {...props} navigator={navigator} onNavigation={onNavigation} />)
     const webView = tree.find('WebView')
-    const url = 'https://canvas.instructure.com/courses/1/assignments/1'
+    const url = 'https://lms.flexidata.vn/courses/1/assignments/1'
     webView.simulate('Navigation', { nativeEvent: { url } })
     expect(navigator.show).not.toHaveBeenCalled()
     expect(onNavigation).toHaveBeenCalledWith(url)

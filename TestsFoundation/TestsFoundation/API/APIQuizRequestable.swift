@@ -18,7 +18,7 @@
 
 import Core
 
-// https://canvas.instructure.com/doc/api/quizzes.html#method.quizzes/quizzes_api.create
+// https://lms.flexidata.vn/doc/api/quizzes.html#method.quizzes/quizzes_api.create
 struct PostQuizRequest: APIRequestable {
     typealias Response = APIQuiz
     struct Body: Codable {
@@ -61,7 +61,7 @@ struct PostQuizRequest: APIRequestable {
     let method = APIMethod.post
 }
 
-// https://canvas.instructure.com/doc/api/quizzes.html#method.quizzes/quizzes_api.index
+// https://lms.flexidata.vn/doc/api/quizzes.html#method.quizzes/quizzes_api.index
 public struct ListQuizzesRequest: APIRequestable {
     public typealias Response = [APIQuiz]
 
@@ -80,7 +80,7 @@ public struct ListQuizzesRequest: APIRequestable {
     }
 }
 
-// https://canvas.instructure.com/doc/api/quiz_questions.html#method.quizzes/quiz_questions.create
+// https://lms.flexidata.vn/doc/api/quiz_questions.html#method.quizzes/quiz_questions.create
 public struct PostQuizQuestionRequest: APIRequestable {
     public typealias Response = APIQuizQuestion
     public struct Body: Codable {
@@ -112,7 +112,7 @@ public struct PostQuizQuestionRequest: APIRequestable {
     public let method = APIMethod.post
 }
 
-// https://canvas.instructure.com/doc/api/quiz_submissions.html#method.quizzes/quiz_submissions_api.create
+// https://lms.flexidata.vn/doc/api/quiz_submissions.html#method.quizzes/quiz_submissions_api.create
 struct PostQuizSubmissionRequest: APIRequestable {
     struct Response: Codable {
         let quiz_submissions: [APIQuizSubmission]
@@ -133,7 +133,7 @@ struct PostQuizSubmissionRequest: APIRequestable {
     let method = APIMethod.post
 }
 
-// https://canvas.instructure.com/doc/api/quiz_submission_questions.html#method.quizzes/quiz_submission_questions.answer
+// https://lms.flexidata.vn/doc/api/quiz_submission_questions.html#method.quizzes/quiz_submission_questions.answer
 struct PostQuizSubmissionQuestionRequest: APIRequestable {
     struct Response: Codable {
         let quiz_submission_questions: [APIQuizSubmissionQuestion]
@@ -160,7 +160,7 @@ struct PostQuizSubmissionQuestionRequest: APIRequestable {
     let method = APIMethod.post
 }
 
-// https://canvas.instructure.com/doc/api/quiz_submissions.html#method.quizzes/quiz_submissions_api.complete
+// https://lms.flexidata.vn/doc/api/quiz_submissions.html#method.quizzes/quiz_submissions_api.complete
 struct PostQuizSubmissionCompleteRequest: APIRequestable {
     typealias Response = PostQuizSubmissionRequest.Response
     struct Body: Codable {

@@ -377,7 +377,7 @@ describe('AssignmentList', () => {
     defaultProps.courseID = '1'
     shallow(<AssignmentList {...defaultProps} showGrades />)
     expect(NativeModules.SiriShortcutManager.donateSiriShortcut).toHaveBeenCalledWith({
-      identifier: 'com.instructure.siri.shortcut.getgrades',
+      identifier: 'vn.flexidata.lms.siri.shortcut.getgrades',
       name: '123',
       url: '/courses/1/grades',
     })

@@ -21,7 +21,7 @@
 extension LoginSession {
     public static func make(
         accessToken: String? = "token",
-        baseURL: URL = URL(string: "https://canvas.instructure.com")!,
+        baseURL: URL = URL(string: "https://lms.flexidata.vn")!,
         expiresAt: Date? = nil,
         lastUsedAt: Date = Date(),
         locale: String? = "en",
@@ -52,7 +52,7 @@ extension LoginSession {
     }
 
     public static func useTestKeychain() {
-        Keychain.app = Keychain(serviceName: "com.instructure.shared-credentials.tests")
+        Keychain.app = Keychain(serviceName: "vn.flexidata.lms.shared-credentials.tests")
         clearAll()
     }
 }

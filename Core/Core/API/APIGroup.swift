@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/groups.html#Group
+// https://lms.flexidata.vn/doc/api/groups.html#Group
 public struct APIGroup: Codable, Equatable {
     let id: ID
     let name: String

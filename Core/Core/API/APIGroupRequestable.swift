@@ -18,8 +18,8 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/groups.html#method.groups.index
-// https://canvas.instructure.com/doc/api/groups.html#method.groups.context_index
+// https://lms.flexidata.vn/doc/api/groups.html#method.groups.index
+// https://lms.flexidata.vn/doc/api/groups.html#method.groups.context_index
 public struct GetGroupsRequest: APIRequestable {
     public typealias Response = [APIGroup]
 
@@ -36,7 +36,7 @@ public struct GetGroupsRequest: APIRequestable {
     ]
 }
 
-// https://canvas.instructure.com/doc/api/groups.html#method.groups.users
+// https://lms.flexidata.vn/doc/api/groups.html#method.groups.users
 struct GetGroupUsersRequest: APIRequestable {
     typealias Response = [APIUser]
 
@@ -54,7 +54,7 @@ struct GetGroupUsersRequest: APIRequestable {
     ]
 }
 
-// https://canvas.instructure.com/doc/api/groups.html#method.groups.show
+// https://lms.flexidata.vn/doc/api/groups.html#method.groups.show
 public struct GetGroupRequest: APIRequestable {
     public typealias Response = APIGroup
 

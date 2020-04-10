@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://canvas.instructure.com/doc/api/sections.html#Section
+// https://lms.flexidata.vn/doc/api/sections.html#Section
 public struct APICourseSection: Codable, Equatable {
     let id: ID
     let name: String
@@ -56,7 +56,7 @@ extension APICourseSection {
 }
 #endif
 
-// https://canvas.instructure.com/doc/api/sections.html#method.sections.index
+// https://lms.flexidata.vn/doc/api/sections.html#method.sections.index
 public struct GetCourseSectionsRequest: APIRequestable {
     public typealias Response = [APICourseSection]
 

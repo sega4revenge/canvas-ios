@@ -50,7 +50,7 @@ class IPCServer {
             let thread = Thread {
                 let loop = CFRunLoopGetCurrent()
                 let source = CFMessagePortCreateRunLoopSource(kCFAllocatorDefault, port, 0)
-                let mode = CFRunLoopMode("com.instructure.ipc-server" as CFString)
+                let mode = CFRunLoopMode("vn.flexidata.lms.ipc-server" as CFString)
                 CFRunLoopAddSource(loop, source, mode)
                 while true {
                     CFRunLoopRunInMode(mode, 1000, false)
@@ -64,7 +64,7 @@ class IPCServer {
 
 class IPCAppServer: IPCServer {
     static func portName(id: String) -> String {
-        "com.instructure.icanvas.ui-test-app-\(id)"
+        "vn.flexidata.lms.canvas.ui-test-app-\(id)"
     }
 
     override func handler(msgid: Int32, data: Data?) -> Data? {
@@ -114,7 +114,7 @@ protocol IPCDriverServerDelegate: class {
 
 class IPCDriverServer: IPCServer {
     static func portName(id: String) -> String {
-        "com.instructure.icanvas.ui-test-driver-\(id)"
+        "vn.flexidata.lms.canvas.ui-test-driver-\(id)"
     }
 
     override func handler(msgid: Int32, data: Data?) -> Data? {
@@ -163,7 +163,7 @@ class IPCClient {
 
         var responseData: Unmanaged<CFData>?
         let requestData = (try? JSONEncoder().encode(request))!
-        let mode = "com.instructure.ipc-client" as CFString
+        let mode = "vn.flexidata.lms.ipc-client" as CFString
         let status = CFMessagePortSendRequest(messagePort, 0, requestData as CFData, 1000, 1000, mode, &responseData)
         guard status == kCFMessagePortSuccess else {
             throw IPCError(message: "IPCClient.requestRemote: error sending IPC request")

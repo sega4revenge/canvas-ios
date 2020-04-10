@@ -32,7 +32,7 @@ jest.mock('../../canvas-api', () => ({
   getAuthenticatedSessionURL: jest.fn(),
   getSession: () => ({
     authToken: '',
-    baseURL: 'canvas.instructure.com',
+    baseURL: 'lms.flexidata.vn',
     user: {
       primary_email: 'user@user.com',
       id: '1',
@@ -217,10 +217,10 @@ describe('Navigator', () => {
   })
 
   it('opens a webview with the https url if we dont route some canvas protocol', async () => {
-    const httpsUrl = 'https://canvas.instructure.com/bogus'
+    const httpsUrl = 'https://lms.flexidata.vn/bogus'
     const promise = Promise.resolve({ data: { session_url: httpsUrl + '?auth' } })
     canvas.getAuthenticatedSessionURL.mockReturnValueOnce(promise)
-    new Navigator('push').show('canvas-teacher://canvas.instructure.com/bogus')
+    new Navigator('push').show('canvas-teacher://lms.flexidata.vn/bogus')
 
     expect(canvas.getAuthenticatedSessionURL).toHaveBeenCalledWith(httpsUrl)
     await promise
