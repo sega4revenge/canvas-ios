@@ -38,10 +38,10 @@ class DiscussionReplyTests: CoreUITestCase {
         mockData(GetTopicRequest(context: course, topicID: discussion.id.value), value: discussion)
         mockData(GetFullTopicRequest(context: course, topicID: discussion.id.value), value: fullTopic)
         mockData(ListDiscussionEntriesRequest(context: course, topicID: discussion.id.value), value: fullTopic.view)
-        let readDiscussionUrl = URL(string: "https://lms.flexidata.vn/api/v1/courses/\(course.id)/discussion_topics/\(discussion.id)/read")!
+        let readDiscussionUrl = URL(string: "https://canvas.instructure.com/api/v1/courses/\(course.id)/discussion_topics/\(discussion.id)/read")!
         mockURL(readDiscussionUrl, response: HTTPURLResponse(url: readDiscussionUrl, statusCode: 204, httpVersion: nil, headerFields: [:]))
         fullTopic.unread_entries.forEach { entry in
-            let url = URL(string: "https://lms.flexidata.vn/api/v1/courses/\(course.id)/discussion_topics/\(discussion.id)/entries/\(entry)/read")!
+            let url = URL(string: "https://canvas.instructure.com/api/v1/courses/\(course.id)/discussion_topics/\(discussion.id)/entries/\(entry)/read")!
             mockResponse(URLRequest(url: url)) { [weak self] _ in
                 self?.markedAsRead[entry] = true
                 return MockHTTPResponse(http: HTTPURLResponse(url: url, statusCode: 204, httpVersion: nil, headerFields: [:]))

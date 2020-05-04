@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/files.html#File
+// https://canvas.instructure.com/doc/api/files.html#File
 public struct APIFile: Codable, Equatable {
     let id: ID
     let uuid: String
@@ -163,7 +163,7 @@ public struct APIFileToken: Codable, Equatable {
     let token: String
 }
 
-// https://lms.flexidata.vn/doc/api/files.html#Folder
+// https://canvas.instructure.com/doc/api/files.html#Folder
 public struct APIFileFolder: Codable, Equatable {
     let context_type: String
     let context_id: ID
@@ -187,7 +187,7 @@ public struct APIFileFolder: Codable, Equatable {
     let for_submissions: Bool
 }
 
-// https://lms.flexidata.vn/doc/api/files.html#method.files.api_show
+// https://canvas.instructure.com/doc/api/files.html#method.files.api_show
 public struct GetFileRequest: APIRequestable {
     public typealias Response = APIFile
 
@@ -212,7 +212,7 @@ public struct GetFileRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/file.file_uploads.html - Step 1
+// https://canvas.instructure.com/doc/api/file.file_uploads.html - Step 1
 public struct PostFileUploadTargetRequest: APIRequestable {
     public typealias Response = FileUploadTarget
 
@@ -267,7 +267,7 @@ public struct PostFileUploadTargetRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/file.file_uploads.html - Step 2
+// https://canvas.instructure.com/doc/api/file.file_uploads.html - Step 2
 public struct PostFileUploadRequest: APIRequestable {
     public typealias Response = APIFile
 
@@ -300,7 +300,7 @@ public struct PostFileUploadRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/files.html#method.folders.resolve_path
+// https://canvas.instructure.com/doc/api/files.html#method.folders.resolve_path
 public class GetContextFolderHierarchyRequest: APIRequestable {
     public typealias Response = [APIFileFolder]
 
@@ -321,7 +321,7 @@ public class GetContextFolderHierarchyRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/files.html#method.folders.api_index
+// https://canvas.instructure.com/doc/api/files.html#method.folders.api_index
 public class ListFoldersRequest: APIRequestable {
     public typealias Response = [APIFileFolder]
 
@@ -345,7 +345,7 @@ public class ListFoldersRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/files.html#method.files.api_index
+// https://canvas.instructure.com/doc/api/files.html#method.files.api_index
 public class ListFilesRequest: APIRequestable {
     public typealias Response = [APIFile]
 
@@ -369,7 +369,7 @@ public class ListFilesRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/files.html#method.folders.show
+// https://canvas.instructure.com/doc/api/files.html#method.folders.show
 public class GetFolderRequest: APIRequestable {
     public typealias Response = APIFileFolder
 
@@ -394,7 +394,7 @@ public class GetFolderRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/files.html#method.files.destroy
+// https://canvas.instructure.com/doc/api/files.html#method.files.destroy
 struct DeleteFileRequest: APIRequestable {
     typealias Response = APIFile
 

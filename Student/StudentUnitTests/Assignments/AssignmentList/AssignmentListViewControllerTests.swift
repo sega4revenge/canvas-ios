@@ -26,7 +26,7 @@ class AssignmentListViewControllerTests: StudentTestCase {
 
     var vc: AssignmentListViewController!
     let courseID = "1"
-    let baseURL = URL(string: "https://lms.flexidata.vn/")!
+    let baseURL = URL(string: "https://canvas.instructure.com/")!
     var req: AssignmentListRequestable!
     var gradingPeriods: [APIGradingPeriod] = []
     var groups: [APIAssignmentListGroup] = []

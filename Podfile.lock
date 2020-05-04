@@ -14,10 +14,13 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Bagel (1.3.2):
+    - CocoaAsyncSocket
   - boost-for-react-native (1.63.0)
   - BVLinearGradient (2.5.6):
     - React
   - Cartography (3.1.0)
+  - CocoaAsyncSocket (7.6.4)
   - DoubleConversion (1.1.6)
   - Firebase/Analytics (6.20.0):
     - Firebase/Core
@@ -225,6 +228,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Bagel
   - BVLinearGradient (from `./rn/Teacher/node_modules/react-native-linear-gradient`)
   - Cartography (~> 3.1)
   - DoubleConversion (from `./rn/Teacher/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -267,8 +271,10 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - Bagel
     - boost-for-react-native
     - Cartography
+    - CocoaAsyncSocket
     - Firebase
     - FirebaseABTesting
     - FirebaseAnalytics
@@ -334,9 +340,11 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Bagel: 199e0105ac694d6eee9db54dd006c940da6ce81b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   Firebase: fe7f74012742ab403451dd283e6909b8f1fb348a
   FirebaseABTesting: 821a3a3e4a145987e80fee3657c4de1cb9adf693
@@ -375,6 +383,6 @@ SPEC CHECKSUMS:
   RNSound: a1d01988e043aed5dbb476c2152b5ffb02446750
   yoga: 03ff42a6f223fb88deeaed60249020d80c3091ee
 
-PODFILE CHECKSUM: daf061505820492dac5e4ee6011b3aecc9ce6cc3
+PODFILE CHECKSUM: c1406b854b25dd50b2b0d3791428b89705a16c61
 
 COCOAPODS: 1.9.1

@@ -25,7 +25,7 @@ import Firebase
 import CanvasCore
 import Core
 import React
-
+import Bagel
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     lazy var window: UIWindow? = ActAsUserWindow(frame: UIScreen.main.bounds, loginDelegate: self)
@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         DocViewerViewController.setup(.teacherPSPDFKitLicense)
         prepareReactNative()
         try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-
+        Bagel.start()
         UIApplication.shared.reactive.applicationIconBadgeNumber <~ TabBarBadgeCounts.applicationIconBadgeNumber
 
         if let session = LoginSession.mostRecent {

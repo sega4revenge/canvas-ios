@@ -81,7 +81,7 @@ public struct GetFrontPageRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/pages.html#method.wiki_pages_api.show
+// https://canvas.instructure.com/doc/api/pages.html#method.wiki_pages_api.show
 public struct GetPageRequest: APIRequestable {
     public typealias Response = APIPage
 
@@ -93,7 +93,7 @@ public struct GetPageRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/pages.html#method.wiki_pages_api.destroy
+// https://canvas.instructure.com/doc/api/pages.html#method.wiki_pages_api.destroy
 public struct DeletePageRequest: APIRequestable {
     public typealias Response = APIPage
 

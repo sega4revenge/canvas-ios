@@ -18,9 +18,9 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/all_resources.html#method.accounts.permissions
-// https://lms.flexidata.vn/doc/api/all_resources.html#method.courses.permissions
-// https://lms.flexidata.vn/doc/api/all_resources.html#method.groups.permissions
+// https://canvas.instructure.com/doc/api/all_resources.html#method.accounts.permissions
+// https://canvas.instructure.com/doc/api/all_resources.html#method.courses.permissions
+// https://canvas.instructure.com/doc/api/all_resources.html#method.groups.permissions
 public struct GetContextPermissionsRequest: APIRequestable {
     public typealias Response = APIPermissions
 

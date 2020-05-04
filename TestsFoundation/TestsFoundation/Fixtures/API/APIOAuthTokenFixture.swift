@@ -67,7 +67,7 @@ extension APIOAuthUser {
 extension APIVerifyClient {
     public static func make(
         authorized: Bool = true,
-        base_url: URL? = URL(string: "https://lms.flexidata.vn/")!,
+        base_url: URL? = URL(string: "https://canvas.instructure.com/")!,
         client_id: String? = "fred",
         client_secret: String? = "swordfish"
     ) -> APIVerifyClient {

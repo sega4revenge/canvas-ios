@@ -111,7 +111,7 @@ class LTIToolsTests: CoreTestCase {
             moduleItemID: nil
         )
         let request = GetSessionlessLaunchURLRequest(context: ContextModel(.course, id: "1"), id: nil, url: nil, assignmentID: nil, moduleItemID: nil, launchType: nil)
-        let actualURL = URL(string: "https://lms.flexidata.vn")!
+        let actualURL = URL(string: "https://canvas.instructure.com")!
 
         api.mock(request, value: nil)
         var success = false
@@ -149,7 +149,7 @@ class LTIToolsTests: CoreTestCase {
     func testPresentToolInSafariProper() {
         let tools = LTITools()
         let request = GetSessionlessLaunchURLRequest(context: tools.context, id: nil, url: nil, assignmentID: nil, moduleItemID: nil, launchType: nil)
-        let url = URL(string: "https://lms.flexidata.vn")!
+        let url = URL(string: "https://canvas.instructure.com")!
         api.mock(request, value: .make(url: url))
         UserDefaults.standard.set(true, forKey: "open_lti_safari")
         tools.presentTool(from: mockView, animated: true)
@@ -160,7 +160,7 @@ class LTIToolsTests: CoreTestCase {
     func testPresentGoogleApp() throws {
         let tools = LTITools()
         let request = GetSessionlessLaunchURLRequest(context: tools.context, id: nil, url: nil, assignmentID: nil, moduleItemID: nil, launchType: nil)
-        let url = URL(string: "https://lms.flexidata.vn")!
+        let url = URL(string: "https://canvas.instructure.com")!
         api.mock(request, value: .make(name: "Google Apps", url: url))
         tools.presentTool(from: mockView, animated: true)
         let controller = try XCTUnwrap(router.presented as? GoogleCloudAssignmentViewController)

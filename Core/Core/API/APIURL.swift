@@ -58,7 +58,7 @@ public struct APIURL: Codable, Equatable {
 #if DEBUG
 extension APIURL {
     public static func make(
-        rawValue: URL = URL(string: "https://lms.flexidata.vn")!
+        rawValue: URL = URL(string: "https://canvas.instructure.com")!
     ) -> APIURL {
         return APIURL(rawValue: rawValue)
     }

@@ -21,7 +21,7 @@
 extension LoginSession {
     public static func make(
         accessToken: String? = "token",
-        baseURL: URL = URL(string: "https://lms.flexidata.vn")!,
+        baseURL: URL = URL(string: "https://canvas.instructure.com")!,
         expiresAt: Date? = nil,
         lastUsedAt: Date = Date(),
         locale: String? = "en",

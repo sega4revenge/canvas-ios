@@ -90,7 +90,7 @@ const comments = [
       type: 'media',
       mediaID: '1',
       mediaType: 'audio',
-      url: 'http://lms.flexidata.vn/audio.mp3',
+      url: 'http://canvas.instructure.com/audio.mp3',
       displayName: 'Audio Comment',
     },
   },

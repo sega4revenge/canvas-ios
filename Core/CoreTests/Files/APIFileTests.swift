@@ -97,7 +97,7 @@ extension APIFileTests {
             "display_name": "File 1",
             "filename": "file1.jpg",
             "content-type": "image",
-            "url": "https://lms.flexidata.vn/files/1",
+            "url": "https://canvas.instructure.com/files/1",
             "size": 10,
             "created_at": "2020-02-10T22:26:48Z",
             "updated_at": "2020-02-10T22:26:48Z",

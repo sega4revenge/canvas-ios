@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/error_reports.html#method.errors.create
+// https://canvas.instructure.com/doc/api/error_reports.html#method.errors.create
 struct PostErrorReportRequest: APIRequestable {
     typealias Response = APINoContent
 

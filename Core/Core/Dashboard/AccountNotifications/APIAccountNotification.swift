@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/account_notifications.html#AccountNotification
+// https://canvas.instructure.com/doc/api/account_notifications.html#AccountNotification
 struct APIAccountNotification: Codable {
     let end_at: Date?
     let icon: AccountNotificationIcon
@@ -29,7 +29,7 @@ struct APIAccountNotification: Codable {
     let subject: String
 }
 
-// https://lms.flexidata.vn/doc/api/account_notifications.html#method.account_notifications.user_index
+// https://canvas.instructure.com/doc/api/account_notifications.html#method.account_notifications.user_index
 struct GetAccountNotificationsRequest: APIRequestable {
     typealias Response = [APIAccountNotification]
 
@@ -37,7 +37,7 @@ struct GetAccountNotificationsRequest: APIRequestable {
     let query: [APIQueryItem] = [ .perPage(99) ]
 }
 
-// https://lms.flexidata.vn/doc/api/account_notifications.html#method.account_notifications.user_close_notification
+// https://canvas.instructure.com/doc/api/account_notifications.html#method.account_notifications.user_close_notification
 struct DeleteAccountNotificationRequest: APIRequestable {
     typealias Response = APINoContent
 

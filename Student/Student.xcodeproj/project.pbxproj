@@ -1869,7 +1869,6 @@
 				B0C8BDFA0291149E97BCF90D /* [CP] Embed Pods Frameworks */,
 				F9B947052215E97A0083E660 /* Carthage Copy Frameworks */,
 				3B6DCCB51FB502CE005EE8D2 /* Embed App Extensions */,
-				3B3B5B202421D91300620291 /* FirebaseCrashlytics */,
 			);
 			buildRules = (
 			);
@@ -2220,26 +2219,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3B3B5B202421D91300620291 /* FirebaseCrashlytics */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			name = FirebaseCrashlytics;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ] ; then\n    \"${PODS_ROOT}/FirebaseCrashlytics/run\" || echo \"FirebaseCrashlytics build phase script failed!\"\nfi\n";
-		};
 		420D38066A53E2683A07A16C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2301,7 +2280,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n\n# Define NVM_DIR and source the nvm.sh setup script\n[ -z \"$NVM_DIR\" ] && export NVM_DIR=\"$HOME/.nvm\"\nif [[ -s \"$HOME/.nvm/nvm.sh\" ]]; then\n. \"$HOME/.nvm/nvm.sh\"\nelif [[ -x \"$(command -v brew)\" && -s \"$(brew --prefix nvm)/nvm.sh\" ]]; then\n. \"$(brew --prefix nvm)/nvm.sh\"\nfi\n\nif [ \"${CONFIGURATION}\" = \"Release\" ]\nthen\ncd \"${PROJECT_DIR}/../rn/Teacher\"\nset -x\nDEST=$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\nreact-native bundle --entry-file ./index.ios.js --platform ios --bundle-output \"${DEST}/main.jsbundle\" --sourcemap-output \"${DEST}/main.jsbundle.map\" --dev false --assets-dest \"$DEST\" --reset-cache\ncd \"${PROJECT_DIR}\"\nelse\n../rn/Teacher/node_modules/react-native/scripts/react-native-xcode.sh\nfi";
+			shellScript = "export NODE_BINARY=node\n\n# Define NVM_DIR and source the nvm.sh setup script\n[ -z \"$NVM_DIR\" ] && export NVM_DIR=\"$HOME/.nvm\"\nif [[ -s \"$HOME/.nvm/nvm.sh\" ]]; then\n. \"$HOME/.nvm/nvm.sh\"\nelif [[ -x \"$(command -v brew)\" && -s \"$(brew --prefix nvm)/nvm.sh\" ]]; then\n. \"$(brew --prefix nvm)/nvm.sh\"\nfi\n\nif [ \"${CONFIGURATION}\" = \"Release\" ]\nthen\ncd \"${PROJECT_DIR}/../rn/Teacher\"\nset -x\nDEST=$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\nreact-native bundle --entry-file ./index.ios.js --platform ios --bundle-output \"${DEST}/main.jsbundle\" --sourcemap-output \"${DEST}/main.jsbundle.map\" --dev false --assets-dest \"$DEST\" --reset-cache\ncd \"${PROJECT_DIR}\"\nelse\n../rn/Teacher/node_modules/react-native/scripts/react-native-xcode.sh\nfi\n";
 		};
 		65A6E4984C788E2BE7DDEEDB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2946,7 +2925,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.icanvas.GradesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.flexidata.lms.student.GradesWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

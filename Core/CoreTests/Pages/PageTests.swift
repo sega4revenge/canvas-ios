@@ -45,7 +45,7 @@ class PageTests: CoreTestCase {
             body: "This is only a test",
             editing_roles: "teacher,public",
             front_page: true,
-            html_url: URL(string: "https://lms.flexidata.vn/courses/1/pages/test-test")!,
+            html_url: URL(string: "https://canvas.instructure.com/courses/1/pages/test-test")!,
             page_id: ID("2"),
             published: true,
             title: "Test Test",

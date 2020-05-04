@@ -161,7 +161,7 @@ class ModuleListViewControllerTests: CoreTestCase {
     }
 
     func testScrollsToPaginatedModule() {
-        let link = "https://lms.flexidata.vn/courses/1/modules?page=2"
+        let link = "https://canvas.instructure.com/courses/1/modules?page=2"
         let next = HTTPURLResponse(next: link)
         api.mock(GetModulesRequest(courseID: "1", include: [.items, .content_details]), value: [
             .make(id: "1", position: 1),
@@ -196,7 +196,7 @@ class ModuleListViewControllerTests: CoreTestCase {
     }
 
     func testGetNextPageOfItems() throws {
-        let link = "https://lms.flexidata.vn/courses/1/modules/1/items?page=2"
+        let link = "https://canvas.instructure.com/courses/1/modules/1/items?page=2"
         let next = HTTPURLResponse(next: link)
         api.mock(GetModulesRequest(courseID: "1", include: [.items, .content_details]), value: [.make(id: "1", items: nil)])
         api.mock(GetModuleItemsRequest(courseID: "1", moduleID: "1", include: [.content_details]), value: [.make(id: "1")], response: next)
@@ -221,7 +221,7 @@ class ModuleListViewControllerTests: CoreTestCase {
 
     func testLoadingNextPage() {
         api.mock(GetModulesRequest(courseID: "1", include: [.items, .content_details]), value: [])
-        let link = "https://lms.flexidata.vn/courses/1/modules?page=2"
+        let link = "https://canvas.instructure.com/courses/1/modules?page=2"
         let next = HTTPURLResponse(next: link)
         let one = APIModule.make(id: "1", items: [])
         let two = APIModule.make(id: "2", items: [])
@@ -241,7 +241,7 @@ class ModuleListViewControllerTests: CoreTestCase {
     func testGetNextPageWithTooManyItems() {
         api.mock(GetModulesRequest(courseID: "1", include: [.items, .content_details]), value: [])
         viewController.view.layoutIfNeeded()
-        let link = "https://lms.flexidata.vn/courses/1/modules?page=2"
+        let link = "https://canvas.instructure.com/courses/1/modules?page=2"
         let next = HTTPURLResponse(next: link)
         let one = APIModule.make(id: "1", position: 1, items: [.make()])
         let two = APIModule.make(id: "2", position: 2, items: nil)
@@ -317,7 +317,7 @@ class ModuleListViewControllerTests: CoreTestCase {
                 assignmentID: nil,
                 moduleItemID: "1",
                 launchType: .module_item),
-            value: .make(url: URL(string: "https://lms.flexidata.vn")!)
+            value: .make(url: URL(string: "https://canvas.instructure.com")!)
         )
         viewController.view.layoutIfNeeded()
         viewController.tableView(viewController.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
@@ -327,7 +327,7 @@ class ModuleListViewControllerTests: CoreTestCase {
     func testSelectExternalURL() {
         api.mock(GetModulesRequest(courseID: "1", include: [.items, .content_details]), value: [
             .make(items: [
-                .make(content: .externalURL(URL(string: "https://lms.flexidata.vn")!)),
+                .make(content: .externalURL(URL(string: "https://canvas.instructure.com")!)),
             ]),
         ])
         viewController.view.layoutIfNeeded()

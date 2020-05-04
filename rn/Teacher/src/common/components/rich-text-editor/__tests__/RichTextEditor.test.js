@@ -116,7 +116,7 @@ describe('RichTextEditor', () => {
     it('should insert image', () => {
       props.attachmentUploadPath = '/users/self/files'
       const image = template.attachment({
-        url: 'https://lms.flexidata.vn/files/1/download',
+        url: 'https://canvas.instructure.com/files/1/download',
         mime_class: 'image',
       })
       props.navigator = template.navigator({

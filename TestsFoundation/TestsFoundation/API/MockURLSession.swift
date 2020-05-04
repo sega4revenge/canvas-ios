@@ -146,7 +146,7 @@ public class MockURLSession: URLSession {
         value: R.Response? = nil,
         response: URLResponse? = nil,
         error: Error? = nil,
-        baseURL: URL = URL(string: "https://lms.flexidata.vn")!,
+        baseURL: URL = URL(string: "https://canvas.instructure.com")!,
         accessToken: String? = nil,
         taskID: Int = 0
     ) -> MockDataTask {
@@ -162,7 +162,7 @@ public class MockURLSession: URLSession {
         _ requestable: R,
         response: URLResponse? = nil,
         error: Error?,
-        baseURL: URL = URL(string: "https://lms.flexidata.vn")!,
+        baseURL: URL = URL(string: "https://canvas.instructure.com")!,
         accessToken: String? = nil,
         taskID: Int = 0
     ) -> MockDataTask {
@@ -175,7 +175,7 @@ public class MockURLSession: URLSession {
         data: Data? = nil,
         response: URLResponse? = nil,
         error: Error? = nil,
-        baseURL: URL = URL(string: "https://lms.flexidata.vn")!,
+        baseURL: URL = URL(string: "https://canvas.instructure.com")!,
         accessToken: String? = nil,
         dataHandler: (() -> UrlResponseTuple)? = nil,
         taskID: Int = 0
@@ -221,7 +221,7 @@ public class MockURLSession: URLSession {
 
     public static func mockDataTask<R: APIRequestable>(
         _ requestable: R,
-        baseURL: URL = URL(string: "https://lms.flexidata.vn")!,
+        baseURL: URL = URL(string: "https://canvas.instructure.com")!,
         accessToken: String? = nil
     ) -> MockDataTask? {
         let request = try! requestable.urlRequest(relativeTo: baseURL, accessToken: accessToken, actAsUserID: nil)

@@ -28,10 +28,10 @@ class LoginNavigationControllerTests: CoreTestCase {
         XCTAssert(controller.viewControllers.first is LoginStartViewController)
         XCTAssertTrue(controller.isNavigationBarHidden)
 
-        controller.login(host: "lms.flexidata.vn")
+        controller.login(host: "canvas.instructure.com")
         XCTAssert(controller.viewControllers[0] is LoginStartViewController)
         XCTAssert(controller.viewControllers[1] is LoginFindSchoolViewController)
-        XCTAssertEqual((controller.viewControllers[2] as? LoginWebViewController)?.host, "lms.flexidata.vn")
+        XCTAssertEqual((controller.viewControllers[2] as? LoginWebViewController)?.host, "canvas.instructure.com")
     }
 }
 

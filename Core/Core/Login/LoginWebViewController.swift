@@ -112,10 +112,12 @@ extension LoginWebViewController: WKNavigationDelegate {
         if components.scheme == "about" && components.path == "blank" {
             return decisionHandler(.cancel)
         }
-
+        print(url.absoluteString)
+        print(mobileVerifyModel?.base_url?.absoluteString ?? "")
         let queryItems = components.queryItems
+        print(queryItems?.first(where: { $0.name == "code" })?.value ?? "")
         if // wait for "https://canvas/login?code="
-            url.absoluteString.hasPrefix("https://canvas/login"),
+            url.absoluteString.hasPrefix("https://flexi-lms-api.herokuapp.com/login"),
             let code = queryItems?.first(where: { $0.name == "code" })?.value, !code.isEmpty,
             let mobileVerify = mobileVerifyModel, let baseURL = mobileVerify.base_url {
             task?.cancel()

@@ -31,7 +31,7 @@ class MDMManagerTests: XCTestCase {
         MDMManager.mockDefaults()
         XCTAssertEqual(MDMManager.shared.logins, [
             MDMLogin(
-                host: "lms.flexidata.vn",
+                host: "canvas.instructure.com",
                 username: "apple",
                 password: "titaniumium"
             ),
@@ -41,7 +41,7 @@ class MDMManagerTests: XCTestCase {
         MDMManager.mockBadUsers()
         XCTAssertEqual(MDMManager.shared.logins, [])
         MDMManager.mockHost()
-        XCTAssertEqual(MDMManager.shared.host, "lms.flexidata.vn")
+        XCTAssertEqual(MDMManager.shared.host, "canvas.instructure.com")
         XCTAssertEqual(MDMManager.shared.authenticationProvider, "canvas")
     }
 

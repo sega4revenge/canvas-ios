@@ -91,7 +91,7 @@ public class URLSessionAPI: API {
         urlSession: URLSession = URLSessionAPI.defaultURLSession
     ) {
         self.loginSession = loginSession
-        self.baseURL = baseURL ?? loginSession?.baseURL ?? URL(string: "https://lms.flexidata.vn/")!
+        self.baseURL = baseURL ?? loginSession?.baseURL ?? URL(string: "https://canvas.instructure.com/")!
         self.urlSession = urlSession
     }
 

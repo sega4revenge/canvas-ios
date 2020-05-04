@@ -37,7 +37,7 @@ class LoginWebViewControllerTests: CoreTestCase {
         controller.view.layoutIfNeeded()
         controller.viewWillAppear(false)
         XCTAssertEqual(controller.view.backgroundColor, .named(.backgroundLightest))
-        XCTAssertEqual(controller.webView.url, URL(string: "https://localhost:1/login/oauth2/auth?client_id=1&response_type=code&redirect_uri=https://canvas/login&mobile=1"))
+        XCTAssertEqual(controller.webView.url, URL(string: "https://localhost:1/login/oauth2/auth?client_id=1&response_type=code&redirect_uri=https://heroku/login&mobile=1"))
     }
 
     func xtestPreloaded() {
@@ -82,21 +82,21 @@ class LoginWebViewControllerTests: CoreTestCase {
         }
 
         api.mock(PostLoginOAuthRequest(client: controller.mobileVerifyModel!, code: "c"))
-        action.mockRequest = URLRequest(url: URL(string: "https://canvas/login?code=c")!)
+        action.mockRequest = URLRequest(url: URL(string: "https://heroku/login?code=c")!)
         controller.webView(controller.webView, decidePolicyFor: action) { policy in
             XCTAssertEqual(policy, .cancel)
         }
         XCTAssertNotNil(router.presented)
 
         api.mock(PostLoginOAuthRequest(client: controller.mobileVerifyModel!, code: "c"), value: .make())
-        action.mockRequest = URLRequest(url: URL(string: "https://canvas/login?code=c")!)
+        action.mockRequest = URLRequest(url: URL(string: "https://heroku/login?code=c")!)
         controller.webView(controller.webView, decidePolicyFor: action) { policy in
             XCTAssertEqual(policy, .cancel)
         }
         XCTAssertNotNil(loggedIn)
         XCTAssert(router.viewControllerCalls.last?.0 is LoadingViewController)
 
-        action.mockRequest = URLRequest(url: URL(string: "https://canvas/login?error=e")!)
+        action.mockRequest = URLRequest(url: URL(string: "https://heroku/login?error=e")!)
         controller.webView(controller.webView, decidePolicyFor: action) { policy in
             XCTAssertEqual(policy, .cancel)
         }

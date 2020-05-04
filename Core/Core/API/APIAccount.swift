@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/account_domain_lookups.html#method.account_domain_lookups.search
+// https://canvas.instructure.com/doc/api/account_domain_lookups.html#method.account_domain_lookups.search
 public struct APIAccountResult: Codable, Equatable {
     public let name: String
     public let domain: String

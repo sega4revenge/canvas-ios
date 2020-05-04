@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/users.html#UserDisplay
+// https://canvas.instructure.com/doc/api/users.html#UserDisplay
 struct APIUserDisplay: Codable, Equatable {
     let id: ID
     let short_name: String
@@ -26,7 +26,7 @@ struct APIUserDisplay: Codable, Equatable {
     let html_url: URL
 }
 
-// https://lms.flexidata.vn/doc/api/users.html#User
+// https://canvas.instructure.com/doc/api/users.html#User
 public struct APIUser: Codable, Equatable {
     public let id: ID
     let name: String
@@ -64,7 +64,7 @@ public struct APIUserSettings: Codable, Equatable {
     let hide_dashcard_color_overlays: Bool
 }
 
-// https://lms.flexidata.vn/doc/api/users.html#Profile
+// https://canvas.instructure.com/doc/api/users.html#Profile
 public struct APIProfile: Codable, Equatable {
     public struct APICalendar: Codable, Equatable {
         public let ics: URL?
@@ -188,14 +188,14 @@ extension APIProfile.APICalendar {
 }
 #endif
 
-// https://lms.flexidata.vn/doc/api/users.html#method.users.get_custom_color
+// https://canvas.instructure.com/doc/api/users.html#method.users.get_custom_color
 public struct GetCustomColorsRequest: APIRequestable {
     public typealias Response = APICustomColors
 
     public let path = "users/self/colors"
 }
 
-// https://lms.flexidata.vn/doc/api/users.html#method.users.api_show
+// https://canvas.instructure.com/doc/api/users.html#method.users.api_show
 public struct GetUserRequest: APIRequestable {
     public typealias Response = APIUser
 
@@ -210,7 +210,7 @@ public struct GetUserRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/users.html#method.users.create
+// https://canvas.instructure.com/doc/api/users.html#method.users.create
 struct CreateUserRequest: APIRequestable {
     typealias Response = APIUser
     struct Body: Codable, Equatable {
@@ -236,7 +236,7 @@ struct CreateUserRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/users.html#method.users.update
+// https://canvas.instructure.com/doc/api/users.html#method.users.update
 struct PutUserAvatarRequest: APIRequestable {
     typealias Response = APIUser
 
@@ -259,7 +259,7 @@ struct PutUserAvatarRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/users.html#method.users.set_custom_color
+// https://canvas.instructure.com/doc/api/users.html#method.users.set_custom_color
 struct UpdateCustomColorRequest: APIRequestable {
     struct Response: Codable {
         let hexcode: String // does include '#'
@@ -278,7 +278,7 @@ struct UpdateCustomColorRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/users.html#method.users.settings
+// https://canvas.instructure.com/doc/api/users.html#method.users.settings
 public struct GetUserSettingsRequest: APIRequestable {
     public typealias Response = APIUserSettings
 
@@ -289,7 +289,7 @@ public struct GetUserSettingsRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/users.html#method.users.settings
+// https://canvas.instructure.com/doc/api/users.html#method.users.settings
 public struct PutUserSettingsRequest: APIRequestable {
     public typealias Response = APIUserSettings
     public struct Body: Encodable {
@@ -311,7 +311,7 @@ public struct PutUserSettingsRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/users.html#method.profile.settings
+// https://canvas.instructure.com/doc/api/users.html#method.profile.settings
 public struct GetUserProfileRequest: APIRequestable {
     public typealias Response = APIProfile
 
@@ -327,7 +327,7 @@ public struct GetUserProfileRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/user_observees.html#method.user_observees.create
+// https://canvas.instructure.com/doc/api/user_observees.html#method.user_observees.create
 public struct PostObserveesRequest: APIRequestable {
     public typealias Response = APIUser
 

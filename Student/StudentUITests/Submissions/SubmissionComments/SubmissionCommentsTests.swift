@@ -172,7 +172,7 @@ class SubmissionCommentsTests: StudentUITestCase {
     func xtestAudioRecording() {
         mockBaseRequests()
         mockData(GetSubmissionRequest(context: course, assignmentID: assignment.id.value, userID: "1"), value: APISubmission.make())
-        mockData(GetMediaServiceRequest(), value: APIMediaService(domain: "lms.flexidata.vn"))
+        mockData(GetMediaServiceRequest(), value: APIMediaService(domain: "canvas.instructure.com"))
         mockData(PostMediaSessionRequest(), value: APIMediaSession(ks: "k"))
         mockEncodedData(PostMediaUploadTokenRequest(body: .init(ks: "k")), data: "<id>t</id>".data(using: .utf8))
         mockData(PostMediaUploadRequest(fileURL: URL(string: "data:text/plain,")!, type: .audio, ks: "k", token: "t"))

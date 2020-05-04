@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/conferences.html#Conference
+// https://canvas.instructure.com/doc/api/conferences.html#Conference
 public struct APIConference: Codable {
     let conference_key: String?
     let conference_type: String
@@ -37,7 +37,7 @@ public struct APIConference: Codable {
     // let user_settings: [String: Codable]
 }
 
-// https://lms.flexidata.vn/doc/api/conferences.html#ConferenceRecording
+// https://canvas.instructure.com/doc/api/conferences.html#ConferenceRecording
 public struct APIConferenceRecording: Codable {
     let created_at: APIDate
     let duration_minutes: Double
@@ -128,7 +128,7 @@ extension APIConferencePlaybackFormat {
 }
 #endif
 
-// https://lms.flexidata.vn/doc/api/conferences.html#method.conferences.index
+// https://canvas.instructure.com/doc/api/conferences.html#method.conferences.index
 struct GetConferencesRequest: APIRequestable {
     struct Response: Codable {
         let conferences: [APIConference]

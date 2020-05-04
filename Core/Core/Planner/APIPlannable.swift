@@ -124,7 +124,7 @@ extension APIPlannerOverride {
 
 #endif
 
-// https://lms.flexidata.vn/doc/api/planner.html#method.planner.index
+// https://canvas.instructure.com/doc/api/planner.html#method.planner.index
 public struct GetPlannablesRequest: APIRequestable {
     public typealias Response = [APIPlannable]
 
@@ -153,7 +153,7 @@ public struct GetPlannablesRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/planner.html#method.planner_notes.create
+// https://canvas.instructure.com/doc/api/planner.html#method.planner_notes.create
 public struct PostPlannerNoteRequest: APIRequestable {
     public typealias Response = APINoContent
 

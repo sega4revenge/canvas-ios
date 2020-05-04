@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/late_policy.html
+// https://canvas.instructure.com/doc/api/late_policy.html
 public struct APILatePolicy: Codable, Equatable {
     let id: ID
     let missing_submission_deduction_enabled: Bool

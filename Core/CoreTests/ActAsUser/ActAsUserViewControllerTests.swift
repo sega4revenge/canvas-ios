@@ -62,7 +62,7 @@ class ActAsUserViewControllerTests: CoreTestCase, LoginDelegate {
         controller.actAsUserButton.sendActions(for: .primaryActionTriggered)
         XCTAssertEqual(session?.userID, "1")
         XCTAssertEqual(session?.baseURL, URL(string: "https://cgnu.online"))
-        XCTAssertEqual(session?.masquerader, URL(string: "https://lms.flexidata.vn/users/1"))
+        XCTAssertEqual(session?.masquerader, URL(string: "https://canvas.instructure.com/users/1"))
         session = nil
 
         api.mock(GetUserRequest(userID: "1"), value: .make(), baseURL: URL(string: "https://cgnu.instructure.com")!)

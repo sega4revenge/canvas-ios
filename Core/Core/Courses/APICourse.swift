@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/courses.html#Course
+// https://canvas.instructure.com/doc/api/courses.html#Course
 public struct APICourse: Codable, Equatable {
     public let id: ID
     // let sis_course_id: String?
@@ -70,7 +70,7 @@ public struct APICourse: Codable, Equatable {
     let is_favorite: Bool? // include[]=favorites
     // let sections: [APISection]? // include[]=sections
 
-    // https://lms.flexidata.vn/doc/api/courses.html#Term
+    // https://canvas.instructure.com/doc/api/courses.html#Term
     public struct Term: Codable, Equatable {
         let id: ID
         let name: String
@@ -162,7 +162,7 @@ extension APICourse: APIContext {
 }
 #endif
 
-// https://lms.flexidata.vn/doc/api/courses.html#method.courses.index
+// https://canvas.instructure.com/doc/api/courses.html#method.courses.index
 public struct GetCoursesRequest: APIRequestable {
     public typealias Response = [APICourse]
 
@@ -235,7 +235,7 @@ public struct GetCoursesRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/courses.html#method.courses.show
+// https://canvas.instructure.com/doc/api/courses.html#method.courses.show
 public struct GetCourseRequest: APIRequestable {
     public typealias Response = APICourse
 
@@ -285,7 +285,7 @@ struct APICourseParameters: Codable, Equatable {
     let default_view: CourseDefaultView
 }
 
-// https://lms.flexidata.vn/doc/api/courses.html#method.courses.update
+// https://canvas.instructure.com/doc/api/courses.html#method.courses.update
 struct PutCourseRequest: APIRequestable {
     typealias Response = APICourse
     struct Body: Codable, Equatable {
@@ -304,7 +304,7 @@ struct PutCourseRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/courses.html#method.courses.create
+// https://canvas.instructure.com/doc/api/courses.html#method.courses.create
 struct PostCourseRequest: APIRequestable {
     typealias Response = APICourse
     struct Body: Codable, Equatable {

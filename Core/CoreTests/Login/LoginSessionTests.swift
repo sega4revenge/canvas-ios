@@ -48,8 +48,8 @@ class LoginSessionTests: CoreTestCase {
     }
 
     func testBaseURLTrailingSlash() {
-        let entry1 = LoginSession.make(baseURL: URL(string: "https://lms.flexidata.vn/")!)
-        let entry2 = LoginSession.make(baseURL: URL(string: "https://lms.flexidata.vn")!)
+        let entry1 = LoginSession.make(baseURL: URL(string: "https://canvas.instructure.com/")!)
+        let entry2 = LoginSession.make(baseURL: URL(string: "https://canvas.instructure.com")!)
         LoginSession.add(entry1)
         LoginSession.add(entry2) // should replace
         XCTAssertEqual(LoginSession.sessions.count, 1)

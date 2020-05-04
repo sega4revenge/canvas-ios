@@ -28,7 +28,7 @@ type Body = null | void | string | Object | FormData | Blob | ArrayBuffer
 
 export function resolveUrl (url: string, config: ApiConfig) {
   // FIXME: hardcoded url. MBL-13344
-  const baseURL = (config.baseURL || getSession().baseURL || 'https://lms.flexidata.vn').replace(/\/?$/, '')
+  const baseURL = (config.baseURL || getSession().baseURL || 'https://canvas.instructure.com').replace(/\/?$/, '')
   const version = config.excludeVersion ? '/' : '/api/v1/'
   return /^\w+:/.test(url) ? url : `${baseURL}${version}${url.replace(/^\//, '')}`
 }

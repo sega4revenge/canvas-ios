@@ -22,7 +22,7 @@ import Core
 @testable import Teacher
 
 class RoutesTests: XCTestCase {
-    let route = URLComponents(string: "https://lms.flexidata.vn/api/v1/courses/1")!
+    let route = URLComponents(string: "https://canvas.instructure.com/api/v1/courses/1")!
 
     func userInfoFromRoute(options: RouteOptions) -> [AnyHashable: Any]? {
         let expectation = self.expectation(description: "route notification")

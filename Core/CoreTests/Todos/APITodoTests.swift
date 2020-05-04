@@ -28,7 +28,7 @@ class APITodoTests: CoreTestCase {
     }
 
     func testDeleteTodoRequest() {
-        let request = DeleteTodoRequest(ignoreURL: URL(string: "https://lms.flexidata.vn/deleteme")!)
-        XCTAssertEqual(request.path, "https://lms.flexidata.vn/deleteme")
+        let request = DeleteTodoRequest(ignoreURL: URL(string: "https://canvas.instructure.com/deleteme")!)
+        XCTAssertEqual(request.path, "https://canvas.instructure.com/deleteme")
     }
 }

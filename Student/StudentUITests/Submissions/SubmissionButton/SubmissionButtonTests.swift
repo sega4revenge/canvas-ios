@@ -55,7 +55,7 @@ class SubmissionButtonTests: StudentUITestCase {
             assignmentID: assignment.id.value,
             moduleItemID: nil,
             launchType: .assessment
-        ), value: .make(url: URL(string: "https://lms.flexidata.vn")!))
+        ), value: .make(url: URL(string: "https://canvas.instructure.com")!))
 
         show("/courses/\(course.id)/assignments/\(assignment.id)")
         AssignmentDetails.submitAssignmentButton.tap()
@@ -72,7 +72,7 @@ class SubmissionButtonTests: StudentUITestCase {
             assignmentID: assignment.id.value,
             moduleItemID: nil,
             launchType: .assessment
-        ), value: .make(url: URL(string: "https://lms.flexidata.vn")!))
+        ), value: .make(url: URL(string: "https://canvas.instructure.com")!))
 
         show("/courses/\(course.id)/assignments/\(assignment.id)")
         AssignmentDetails.submitAssignmentButton.tap()
@@ -118,7 +118,7 @@ class SubmissionButtonTests: StudentUITestCase {
     func xtestMediaRecording() {
         mockBaseRequests()
         let assignment = mock(assignment: .make(submission_types: [ .media_recording ]))
-        mockData(GetMediaServiceRequest(), value: APIMediaService(domain: "lms.flexidata.vn"))
+        mockData(GetMediaServiceRequest(), value: APIMediaService(domain: "canvas.instructure.com"))
         mockData(PostMediaSessionRequest(), value: APIMediaSession(ks: "k"))
         mockEncodedData(PostMediaUploadTokenRequest(body: .init(ks: "k")), data: "<id>t</id>".data(using: .utf8))
         mockData(PostMediaUploadRequest(fileURL: URL(string: "data:text/plain,")!, type: .audio, ks: "k", token: "t"))

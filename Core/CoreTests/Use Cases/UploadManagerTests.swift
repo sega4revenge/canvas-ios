@@ -327,7 +327,7 @@ class UploadManagerTests: CoreTestCase {
     }
 
     private func mockGetFile() -> URLSessionTask {
-        let location = "https://lms.flexidata.vn/api/v1/files/1"
+        let location = "https://canvas.instructure.com/api/v1/files/1"
         let task = MockURLSession.MockDataTask()
         let response = HTTPURLResponse(url: URL(string: "https://inst-fs.com")!, statusCode: 201, httpVersion: nil, headerFields: [HttpHeader.location: location])
         task.mock = MockURLSession.MockData(data: nil, response: response, error: nil)

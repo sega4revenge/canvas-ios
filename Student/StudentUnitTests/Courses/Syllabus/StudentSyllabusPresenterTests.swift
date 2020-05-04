@@ -89,7 +89,7 @@ class StudentSyllabusPresenterTests: StudentTestCase {
     }
 
     func testShowURL() {
-        let url = URL(string: "https://lms.flexidata.vn/courses/1/pages/page-one")!
+        let url = URL(string: "https://canvas.instructure.com/courses/1/pages/page-one")!
         presenter.show(url, from: UIViewController())
         XCTAssertTrue(router.lastRoutedTo(url))
     }

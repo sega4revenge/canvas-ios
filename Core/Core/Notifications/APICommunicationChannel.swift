@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/communication_channels.html#CommunicationChannel
+// https://canvas.instructure.com/doc/api/communication_channels.html#CommunicationChannel
 public struct APICommunicationChannel: Codable {
     let address: String
     let id: ID
@@ -55,7 +55,7 @@ public enum CommunicationChannelWorkflowState: String, Codable {
     case active, unconfirmed
 }
 
-// https://lms.flexidata.vn/doc/api/communication_channels.html#method.communication_channels.index
+// https://canvas.instructure.com/doc/api/communication_channels.html#method.communication_channels.index
 public struct GetCommunicationChannelsRequest: APIRequestable {
     public typealias Response = [APICommunicationChannel]
     public let path = "users/self/communication_channels"

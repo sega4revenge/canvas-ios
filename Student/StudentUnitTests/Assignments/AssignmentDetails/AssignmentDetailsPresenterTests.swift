@@ -118,7 +118,7 @@ class AssignmentDetailsPresenterTests: StudentTestCase {
 
     func testBaseURLWithNilFragment() {
         Course.make()
-        let expected = URL(string: "https://lms.flexidata.vn/courses/1/assignments/1")!
+        let expected = URL(string: "https://canvas.instructure.com/courses/1/assignments/1")!
         Assignment.make(from: .make(html_url: expected))
 
         presenter = AssignmentDetailsPresenter(env: env, view: self, courseID: "1", assignmentID: "1", fragment: nil)
@@ -129,10 +129,10 @@ class AssignmentDetailsPresenterTests: StudentTestCase {
 
     func testBaseURLWithFragment() {
         Course.make()
-        let url = URL(string: "https://lms.flexidata.vn/courses/1/assignments/1")!
+        let url = URL(string: "https://canvas.instructure.com/courses/1/assignments/1")!
         let fragment = "fragment"
         Assignment.make(from: .make(html_url: url))
-        let expected = URL(string: "https://lms.flexidata.vn/courses/1/assignments/1#fragment")!
+        let expected = URL(string: "https://canvas.instructure.com/courses/1/assignments/1#fragment")!
 
         presenter = AssignmentDetailsPresenter(env: env, view: self, courseID: "1", assignmentID: "1", fragment: fragment)
 
@@ -143,7 +143,7 @@ class AssignmentDetailsPresenterTests: StudentTestCase {
     func testBaseURLWithEmptyFragment() {
         Course.make()
 
-        let expected = URL(string: "https://lms.flexidata.vn/courses/1/assignments/1")!
+        let expected = URL(string: "https://canvas.instructure.com/courses/1/assignments/1")!
         let fragment = ""
         Assignment.make(from: .make(html_url: expected))
         presenter = AssignmentDetailsPresenter(env: env, view: self, courseID: "1", assignmentID: "1", fragment: fragment)

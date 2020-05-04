@@ -52,6 +52,6 @@ class AssignmentDetailsViewControllerTests: ParentTestCase {
         let compose = router.presented as? ComposeViewController
         XCTAssertEqual(compose?.context.id, courseID)
         XCTAssertEqual(compose?.subjectField.text, "Regarding: John Doe, Assignment - some assignment")
-        XCTAssertEqual(compose?.hiddenMessage, "Regarding: John Doe, https://lms.flexidata.vn/courses/1/assignments/1")
+        XCTAssertEqual(compose?.hiddenMessage, "Regarding: John Doe, https://canvas.instructure.com/courses/1/assignments/1")
     }
 }

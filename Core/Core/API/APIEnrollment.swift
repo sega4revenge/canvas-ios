@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/enrollments.html#Enrollment
+// https://canvas.instructure.com/doc/api/enrollments.html#Enrollment
 public struct APIEnrollment: Codable, Equatable {
     let id: ID?
     let course_id: String?
@@ -72,7 +72,7 @@ public struct APIEnrollment: Codable, Equatable {
 
     let observed_user: APIUser?
 
-    // https://lms.flexidata.vn/doc/api/enrollments.html#Grade
+    // https://canvas.instructure.com/doc/api/enrollments.html#Grade
     public struct Grades: Codable, Equatable {
         let html_url: String
         let current_grade: String?
@@ -164,7 +164,7 @@ extension APIEnrollment.Grades {
 }
 #endif
 
-// https://lms.flexidata.vn/doc/api/enrollments.html#method.enrollments_api.create
+// https://canvas.instructure.com/doc/api/enrollments.html#method.enrollments_api.create
 struct PostEnrollmentRequest: APIRequestable {
     typealias Response = APIEnrollment
     struct Body: Codable, Equatable {
@@ -187,7 +187,7 @@ struct PostEnrollmentRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/enrollments.html#method.enrollments_api.index
+// https://canvas.instructure.com/doc/api/enrollments.html#method.enrollments_api.index
 public struct GetEnrollmentsRequest: APIRequestable {
     public typealias Response = [APIEnrollment]
     public enum Include: String {

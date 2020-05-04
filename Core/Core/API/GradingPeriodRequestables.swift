@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/grading_periods.html#method.grading_periods.index
+// https://canvas.instructure.com/doc/api/grading_periods.html#method.grading_periods.index
 public struct GetGradingPeriodsRequest: APIRequestable {
     public typealias Response = [APIGradingPeriod]
 

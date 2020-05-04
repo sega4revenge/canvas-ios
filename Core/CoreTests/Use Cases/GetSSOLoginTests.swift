@@ -33,7 +33,7 @@ class GetSSOLoginTest: CoreTestCase {
     }
 
     func testFetch() {
-        let login = GetSSOLogin(url: URL(string: "https://sso.beta.canvaslms.com/canvas/login?code=code&domain=lms.flexidata.vn")!, app: .student)!
+        let login = GetSSOLogin(url: URL(string: "https://sso.beta.canvaslms.com/canvas/login?code=code&domain=canvas.instructure.com")!, app: .student)!
         var entry: LoginSession?
         var error: Error?
         let callback = { (session: LoginSession?, err: Error?) in
@@ -45,7 +45,7 @@ class GetSSOLoginTest: CoreTestCase {
         XCTAssertNil(entry)
         XCTAssertNil(error)
 
-        api.mock(GetMobileVerifyRequest(domain: "lms.flexidata.vn"), error: NSError.internalError())
+        api.mock(GetMobileVerifyRequest(domain: "canvas.instructure.com"), error: NSError.internalError())
         login.fetch(callback)
         waitForMainAsync()
         XCTAssertNil(entry)
@@ -53,11 +53,11 @@ class GetSSOLoginTest: CoreTestCase {
 
         let client = APIVerifyClient(
             authorized: true,
-            base_url: URL(string: "https://lms.flexidata.vn"),
+            base_url: URL(string: "https://canvas.instructure.com"),
             client_id: "id",
             client_secret: "sec"
         )
-        api.mock(GetMobileVerifyRequest(domain: "lms.flexidata.vn"), value: client)
+        api.mock(GetMobileVerifyRequest(domain: "canvas.instructure.com"), value: client)
         login.fetch(callback)
         waitForMainAsync()
         XCTAssertNil(entry)
@@ -88,7 +88,7 @@ class GetSSOLoginTest: CoreTestCase {
     func testFetchWithMasqueradeResponse() {
         let client = APIVerifyClient(
             authorized: true,
-            base_url: URL(string: "https://lms.flexidata.vn"),
+            base_url: URL(string: "https://canvas.instructure.com"),
             client_id: "id",
             client_secret: "sec"
         )

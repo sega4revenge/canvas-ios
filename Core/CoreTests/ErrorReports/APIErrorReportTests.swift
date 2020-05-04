@@ -45,7 +45,7 @@ class APIErroReportTests: CoreTestCase {
         -----------------------------------
         User: 1
         Email:\u{0020}
-        Hostname: https://lms.flexidata.vn
+        Hostname: https://canvas.instructure.com
         App Version: 1.0 (1)
         Platform: \(UIDevice.current.model)
         OS Version: \(UIDevice.current.systemVersion)
@@ -55,13 +55,13 @@ class APIErroReportTests: CoreTestCase {
         XCTAssertEqual(min.email, currentSession.userEmail)
         XCTAssertEqual(min.http_env, [
             "User": "1",
-            "Hostname": "https://lms.flexidata.vn",
+            "Hostname": "https://canvas.instructure.com",
             "App Version": "1.0 (1)",
             "Platform": UIDevice.current.model,
             "OS Version": UIDevice.current.systemVersion,
         ])
         XCTAssertNil(min.message)
-        XCTAssertEqual(min.subject, "s [https://lms.flexidata.vn]")
+        XCTAssertEqual(min.subject, "s [https://canvas.instructure.com]")
         XCTAssertEqual(min.url, currentSession.baseURL)
         XCTAssertEqual(min.user_perceived_severity, .just_a_comment)
     }
@@ -81,7 +81,7 @@ class APIErroReportTests: CoreTestCase {
         -----------------------------------
         User: 1
         Email: me@example.com
-        Hostname: https://lms.flexidata.vn
+        Hostname: https://canvas.instructure.com
         App Version: 1.0 (1)
         Platform: \(UIDevice.current.model)
         OS Version: \(UIDevice.current.systemVersion)
@@ -92,14 +92,14 @@ class APIErroReportTests: CoreTestCase {
         XCTAssertEqual(max.email, "me@example.com")
         XCTAssertEqual(max.http_env, [
             "User": "1",
-            "Hostname": "https://lms.flexidata.vn",
+            "Hostname": "https://canvas.instructure.com",
             "App Version": "1.0 (1)",
             "Platform": UIDevice.current.model,
             "OS Version": UIDevice.current.systemVersion,
             "extra": "info",
         ])
         XCTAssertEqual(max.message, "Oops")
-        XCTAssertEqual(max.subject, "s [https://lms.flexidata.vn]")
+        XCTAssertEqual(max.subject, "s [https://canvas.instructure.com]")
         XCTAssertEqual(max.url, currentSession.baseURL)
         XCTAssertEqual(max.user_perceived_severity, .extreme_critical_emergency)
     }
@@ -114,7 +114,7 @@ class APIErroReportTests: CoreTestCase {
         -----------------------------------
         User: 1
         Email: test@test.com
-        Hostname: https://lms.flexidata.vn
+        Hostname: https://canvas.instructure.com
         App Version: 1.0 (1)
         Platform: \(UIDevice.current.model)
         OS Version: \(UIDevice.current.systemVersion)

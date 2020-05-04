@@ -80,7 +80,7 @@ describe('RichContent', () => {
 
   it('can handle data-api-endpoint and data-api-returntype attributes', () => {
     expect(
-      shallow(<RichContent navigator={templates.navigator()} html='<a data-api-endpoint="https://lms.flexidata.vn/courses/5" data-api-returntype="application/json">An anchor</a>' />)
+      shallow(<RichContent navigator={templates.navigator()} html='<a data-api-endpoint="https://canvas.instructure.com/courses/5" data-api-returntype="application/json">An anchor</a>' />)
     ).toMatchSnapshot()
   })
 

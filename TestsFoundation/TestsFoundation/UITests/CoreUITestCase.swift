@@ -254,7 +254,7 @@ open class CoreUITestCase: XCTestCase {
         LoginStart.findSchoolButton.waitToExist(file: file, line: line)
     }
 
-    open func logIn(domain: String = "lms.flexidata.vn", token: String = "t", file: StaticString = #file, line: UInt = #line) {
+    open func logIn(domain: String = "canvas.instructure.com", token: String = "t", file: StaticString = #file, line: UInt = #line) {
         let baseURL = URL(string: "https://\(domain)")!
         logInEntry(LoginSession(
             accessToken: token,
@@ -506,7 +506,7 @@ open class CoreUITestCase: XCTestCase {
         mockEncodableRequest("courses/\(course.id)/external_tools?include_parents=true&per_page=99", value: [String]())
         mockEncodableRequest("courses/\(course.id)/external_tools?include_parents=true", value: [String]())
         if Bundle.main.isTeacherApp {
-            mockEncodableRequest("https://lms.flexidata.vn/api/v1/courses/\(course.id)/lti_apps/launch_definitions?per_page=99&placements%5B%5D=course_navigation", value: [String]())
+            mockEncodableRequest("https://canvas.instructure.com/api/v1/courses/\(course.id)/lti_apps/launch_definitions?per_page=99&placements%5B%5D=course_navigation", value: [String]())
         }
         return course
     }
@@ -576,7 +576,7 @@ open class CoreUITestCase: XCTestCase {
         mockData(GetUserRequest(userID: "self"), value: APIUser.make())
         mockEncodableRequest("users/self/profile?per_page=50", value: APIUser.make()) // CKIClient.fetchCurrentUser
         mockEncodableRequest("users/self/profile", value: APIUser.make())
-        mockData(GetWebSessionRequest(to: URL(string: "https://lms.flexidata.vn/users/self"))) // cookie keepalive
+        mockData(GetWebSessionRequest(to: URL(string: "https://canvas.instructure.com/users/self"))) // cookie keepalive
         mockData(GetCustomColorsRequest(), value: APICustomColors(custom_colors: ["course_1": "#5F4DCE"]))
         mockData(GetBrandVariablesRequest(), value: APIBrandVariables.make())
         mockData(GetUserSettingsRequest(userID: "self"), value: APIUserSettings.make())

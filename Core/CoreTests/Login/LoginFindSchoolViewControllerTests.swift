@@ -21,7 +21,7 @@ import XCTest
 import TestsFoundation
 
 class LoginFindSchoolViewControllerTests: CoreTestCase {
-    var helpURL = URL(string: "https://lms.flexidata.vn/help")
+    var helpURL = URL(string: "https://canvas.instructure.com/help")
     var opened: URL?
     let first = IndexPath(row: 0, section: 0)
 

@@ -18,13 +18,13 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/account_domain_lookups.html#method.account_domain_lookups.search
+// https://canvas.instructure.com/doc/api/account_domain_lookups.html#method.account_domain_lookups.search
 public struct GetAccountsSearchRequest: APIRequestable {
     public typealias Response = [APIAccountResult]
 
     public let searchTerm: String
 
-    public let path = "https://lms.flexidata.vn/api/v1/accounts/search"
+    public let path = "https://flexi-lms-api.herokuapp.com/api/v1/accounts/search"
     public var query: [APIQueryItem] {
         return [
             .perPage(50),

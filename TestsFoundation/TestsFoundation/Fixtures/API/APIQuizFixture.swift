@@ -19,7 +19,7 @@
 import Foundation
 @testable import Core
 
-// https://lms.flexidata.vn/doc/api/quizzes.html
+// https://canvas.instructure.com/doc/api/quizzes.html
 extension APIQuiz {
     public static func make(
         access_code: String? = nil,
@@ -80,7 +80,7 @@ extension APIQuiz {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/quiz_submissions.html
+// https://canvas.instructure.com/doc/api/quiz_submissions.html
 extension APIQuizSubmission {
     public static func make(
         attempt: Int = 1,

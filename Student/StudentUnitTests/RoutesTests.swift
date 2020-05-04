@@ -134,17 +134,17 @@ class RoutesTests: XCTestCase {
     }
 
     func testFallbackNonHTTP() {
-        let expected = URL(string: "https://lms.flexidata.vn/not-a-native-route")!
+        let expected = URL(string: "https://canvas.instructure.com/not-a-native-route")!
         MockURLSession.mock(GetWebSessionRequest(to: expected), value: .init(session_url: expected))
-        router.route(to: "canvas-courses://lms.flexidata.vn/not-a-native-route", from: UIViewController())
+        router.route(to: "canvas-courses://canvas.instructure.com/not-a-native-route", from: UIViewController())
         wait(for: [loginDelegate.openedExpectation], timeout: 1)
         XCTAssertEqual(loginDelegate.opened, expected)
     }
 
     func testFallbackRelative() {
-        let expected = URL(string: "https://lms.flexidata.vn/not-a-native-route")!
+        let expected = URL(string: "https://canvas.instructure.com/not-a-native-route")!
         MockURLSession.mock(GetWebSessionRequest(to: expected), value: .init(session_url: expected))
-        AppEnvironment.shared.currentSession = LoginSession.make(baseURL: URL(string: "https://lms.flexidata.vn")!)
+        AppEnvironment.shared.currentSession = LoginSession.make(baseURL: URL(string: "https://canvas.instructure.com")!)
         router.route(to: "not-a-native-route", from: UIViewController())
         wait(for: [loginDelegate.openedExpectation], timeout: 1)
         XCTAssertEqual(loginDelegate.opened, expected)
@@ -159,12 +159,12 @@ class RoutesTests: XCTestCase {
     }
 
     func testFallbackOpensAuthenticatedSession() {
-        let expected = URL(string: "https://lms.flexidata.vn/not-a-native-route?token=abcdefg")!
+        let expected = URL(string: "https://canvas.instructure.com/not-a-native-route?token=abcdefg")!
         MockURLSession.mock(
-            GetWebSessionRequest(to: URL(string: "https://lms.flexidata.vn/not-a-native-route")),
+            GetWebSessionRequest(to: URL(string: "https://canvas.instructure.com/not-a-native-route")),
             value: .init(session_url: expected)
         )
-        router.route(to: "canvas-courses://lms.flexidata.vn/not-a-native-route", from: UIViewController())
+        router.route(to: "canvas-courses://canvas.instructure.com/not-a-native-route", from: UIViewController())
         wait(for: [loginDelegate.openedExpectation], timeout: 1)
         XCTAssertEqual(loginDelegate.opened, expected)
     }

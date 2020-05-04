@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/submissions.html#method.submissions_api.show
+// https://canvas.instructure.com/doc/api/submissions.html#method.submissions_api.show
 public struct GetSubmissionRequest: APIRequestable {
     public typealias Response = APISubmission
 
@@ -35,7 +35,7 @@ public struct GetSubmissionRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/submissions.html#method.submissions_api.index
+// https://canvas.instructure.com/doc/api/submissions.html#method.submissions_api.index
 public struct GetSubmissionsRequest: APIRequestable {
     public typealias Response = [APISubmission]
 
@@ -70,7 +70,7 @@ public struct GetSubmissionsRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/submissions.html#method.submissions.create
+// https://canvas.instructure.com/doc/api/submissions.html#method.submissions.create
 public struct CreateSubmissionRequest: APIRequestable {
     public typealias Response = APISubmission
     public struct Body: Codable, Equatable {
@@ -125,7 +125,7 @@ public struct CreateSubmissionRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/submissions.html#method.submissions_api.update
+// https://canvas.instructure.com/doc/api/submissions.html#method.submissions_api.update
 struct PutSubmissionGradeRequest: APIRequestable {
     typealias Response = APISubmission
     struct Body: Codable, Equatable {
@@ -206,7 +206,7 @@ public struct GetRecentlyGradedSubmissionsRequest: APIRequestable {
     }
 }
 
-// https://lms.flexidata.vn/doc/api/submissions.html#method.submissions_api.submission_summary
+// https://canvas.instructure.com/doc/api/submissions.html#method.submissions_api.submission_summary
 public struct GetSubmissionSummaryRequest: APIRequestable {
     public typealias Response = APISubmissionSummary
 

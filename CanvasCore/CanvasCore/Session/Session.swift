@@ -23,7 +23,7 @@ import WebKit // fixes random "library not loaded" errors.
 import AVFoundation // fixes random "library not loaded" errors.
 import Core
 
-let LocalStoreAppGroupName = "group.vn.flexidata.lms.Contexts"
+let LocalStoreAppGroupName = "group.vn.flexidata.lms.students.Contexts"
 
 open class Session: NSObject {
     public enum LocalStoreDirectory: String {

@@ -18,7 +18,7 @@
 
 import Foundation
 
-// https://lms.flexidata.vn/doc/api/discussion_topics.html#DiscussionTopic
+// https://canvas.instructure.com/doc/api/discussion_topics.html#DiscussionTopic
 public struct APIDiscussionTopic: Codable, Equatable {
     let id: ID
     let assignment_id: ID?
@@ -59,7 +59,7 @@ public struct APIDiscussionPermissions: Codable, Equatable {
     let attach: Bool?
 }
 
-// https://lms.flexidata.vn/doc/api/discussion_topics.html#method.discussion_topics_api.view
+// https://canvas.instructure.com/doc/api/discussion_topics.html#method.discussion_topics_api.view
 public struct APIDiscussionFullTopic: Codable, Equatable {
     let participants: [APIDiscussionParticipant]
     let unread_entries: [ID]

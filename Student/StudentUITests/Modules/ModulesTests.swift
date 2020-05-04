@@ -37,7 +37,7 @@ class ModulesTests: StudentUITestCase {
                 module_id: "1",
                 title: "Page 1",
                 content: .page("page-1"),
-                url: URL(string: "https://lms.flexidata.vn/api/v1/courses/1/pages/page-1")!,
+                url: URL(string: "https://canvas.instructure.com/api/v1/courses/1/pages/page-1")!,
                 completion_requirement: .make(type: .must_view, completed: false)
             ),
         ])
@@ -47,7 +47,7 @@ class ModulesTests: StudentUITestCase {
                 module_id: "2",
                 title: "Page 2",
                 content: .page("page-2"),
-                url: URL(string: "https://lms.flexidata.vn/api/v1/courses/1/pages/page-2")!,
+                url: URL(string: "https://canvas.instructure.com/api/v1/courses/1/pages/page-2")!,
                 content_details: .make(locked_for_user: true, lock_explanation: "This item is part of a prereq module")
             ),
         ])
@@ -74,7 +74,7 @@ class ModulesTests: StudentUITestCase {
                 module_id: "2",
                 title: "Page 2",
                 content: .page("page-2"),
-                url: URL(string: "https://lms.flexidata.vn/api/v1/courses/1/pages/page-2")!,
+                url: URL(string: "https://canvas.instructure.com/api/v1/courses/1/pages/page-2")!,
                 content_details: .make(locked_for_user: false)
             ),
         ])
