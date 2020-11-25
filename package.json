@@ -24,7 +24,7 @@
     "format-message": "^5.2.0",
     "format-message-parse": "^5.1.2",
     "format-message-print": "^5.1.2",
-    "highlight.js": "^9.13.1",
+    "highlight.js": "^10.1.2",
     "jsdom": "^15.1.0",
     "mkdirp": "^0.5.1",
     "pdfkit": "^0.9.1",
